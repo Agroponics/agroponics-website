@@ -1,6 +1,10 @@
+# Domain Name Research
+
 Domain Name should be short and easy to type in - Search Engine Optimization
+
 Top Level Domain - the ending of your domain (.com, .ca, .biz) - indicates what kind of website it is
 
+# Host Options
 ## HostGator:
 Shared Hosting ($2.75 / month) - Using space on a server that is also utilized by other websites, with each user getting a shared amount of bandwith
 Unmetered Bandwidth - Not charged according to amount of bandwidth used. Term of Service: do not exceed 25% or more of system resources for longer than 90 seconds
