@@ -1,0 +1,298 @@
+/*
+ * Colours:
+ * 
+ * 
+*/
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+/* The volunteer section of the */
+.main > div {
+  width: 100%;
+}
+.sectionTitle {
+  color: #228B22;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.volunteer {
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.volunteer {
+  margin-left: 40px;
+  padding-bottom: 40px;
+}
+
+.volunteer > img {
+  width: 52vw;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.volunteer > div {
+  width: 40vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  justify-content: center;
+  padding: 0 5vw;
+}
+
+/* */
+.commonSpecies {
+  height: fit-content;
+  padding: 10vh 0;
+  background: linear-gradient(
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)
+  ), url('/ivy.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.commonSpecies>h3 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* */
+.video {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 60vh;
+  width: 100%;
+}
+.video>* {
+  margin-right:15vw;
+}
+.vidDesc {
+  width: 25vw;
+  margin-right: 0;
+  margin-left:15vw;
+}
+
+/* buttons in sectons */
+.sectionButton {
+  padding: 12px 24px;
+  cursor: pointer;
+  color: white;
+  font-size: 1.1rem;
+  background-color: #228B22;
+  border-color: transparent;
+  border-radius: 10px;
+  transition: ease-in 0.25s;
+  text-align: center;
+}
+.sectionButton:hover {
+  color: #228B22;
+  background-color: white;
+  border-color: #228B22;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60vw;
+  padding: 10vh 0;
+} 
+.quote>q {
+  color: #228B22;
+  text-align: left;
+  font-size: 18px;
+}
+.quote>span {
+  font-size: 12px;
+  color: gray;
+  text-align: right;
+}
+
+/* About Page */
+.about {
+  display: flex;
+  flex-direction: row;
+  gap: 3vw;
+  padding: 5vh;
+  height: 50vh;
+
+}
+.about > img {
+  width: 40vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about > div {
+  width: 35vw;
+}
+
+.about>div>h2 {
+  color: #228B22;
+  font-size: 36px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.about>div>p {
+  line-height: 1.75;
+}
+.about>div>div {
+  margin-top: 5vh;
+  width: 35vw;
+  align-items: center;
+  text-align: center;
+}
+
+/* Volunteer*/
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  ), url('/forest.jpg');
+  background-attachment: fixed;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  color: white;
+}
+.subscribe>h3{
+  font-size: 36px;
+  margin: 0;
+  text-align: center;
+}
+.subscribe>form {
+  margin-top: 5vh;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.subscribe>form>input {
+  font-size: 18px;
+  border: 2px solid #228B22;
+  color: gray;
+  border-radius: 4px;
+  padding: 5px;
+}
+.subscribe>form>button {
+  text-align: right;
+  width: fit-content;
+  background-color: #228B22;
+  color: white;
+  border: 2px solid #228B22;
+  font-size: 16px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: ease-in 0.2s;
+  margin-left: auto;
+}
+.subscribe>form>button:hover {
+  background-color: white;
+  color: #228B22;
+  transform: scale(1.05);
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10vh;
+  padding-top: 3vh;
+  text-align: center;
+}
+.partners>h3 {
+  color: #228B22;
+  font-size: 24px;  
+}
+.partners>div {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5vw;
+}
+.partners>div>div {
+  width: 30vw;
+}
+.partners>div>div>h4 {
+  color: #228B22;
+}
+.partners>div>div>p {
+  color: #333;
+}
+.partners>div>div>a {
+  color: #607744;
+}
+
+.partners>div>div>a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Plants */
+
+.pageTitle {
+  color: #228B22;
+  font-size: 2rem;
+}
+
+.plantCardsContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  gap: 5vw;
+  margin: 5vh 5vw;
+}
+
+.plantCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  transition: ease-in 0.2s;
+  overflow: hidden;
+}
+
+.plantCard:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.plantCard>img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  max-height: 35vh;
+}
+
+.plantCard>div {
+  height: 20vh;
+  width: auto;
+  background-color: rgb(227, 227, 227);
+  font-size: 14px;
+  padding: 12px;
+}
+.plantCard>div>span {
+  font-size: 1rem;
+  color: #333;
+}
