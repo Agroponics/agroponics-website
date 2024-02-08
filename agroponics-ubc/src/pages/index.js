@@ -1,7 +1,8 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Main.module.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import logo from '../images/logo.png'
 import { useRouter } from 'next/router';
 
 export default function Home() {
@@ -10,34 +11,28 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home || Invasive Plants PW</title>
-        <meta name="description" content="Informing PW of invasive plants in our local community."/>
-        <link rel="icon" href="favicon.png"/>
+        <title>Agroponics UBC</title>
+        <meta name="description" content="UBC Agroponics "/>
+        <link rel="icon" href={logo}/>
       </Head>
       <Navbar />
       <main className={styles.main}>
-        <div className={styles.volunteer}>
-          <img src="/sign1.jpg"/>
+        <div className={styles.landing}>
           <div>
             <h3 className={styles.sectionTitle}>Help Save Our Native Ecosystems</h3>
-            <p>Invasive species are non-native organisms that can cause economic and environmental harm. There are over 450 different invasive species in Canada which causes 7.5 billion dollars in lost revenue for the agriculture and forestry industry annually. <br/>
-            Invasive species are an important issue we need to address in our society, and we can&apos;t do it without you.</p>
-            <br/><button className={styles.sectionButton} onClick={() => router.push('/volunteer')}>Get Involved</button>
+            <div className={styles.landinglogo}/>
+            <button className={styles.sectionButton} onClick={() => router.push('/join')}>Join Our Team</button>
           </div>
         </div>
-        <div className={styles.video}>
-          <div className={styles.vidDesc}>
-              <h3 className={styles.sectionTitle}>Learn About the Issue</h3>
-              <p>This short 3 minute video we made will give you a sense of the scope of the harm cause 
-                by invasive species everyday and get the basic knowledge you need to start helping restore
-                our native ecosystems.
-              </p>
-          </div>
+          
+        <div className={styles.about}>
+          <h3>About Us</h3>
+          <p>we do plants!</p>
         </div>
-        <div className={styles.commonSpecies} id='invasivePlants'>
-            <h3>Common Invasive Species In Vancouver</h3>
-            <p>See our list of common invasive plant species in our city.</p>      
-            <button onClick={() => router.push("/invasivePlants")} className={styles.sectionButton}>
+        <div className={styles.sponsorUs}>
+            <h3>Sponsor Us</h3>
+            <p>Donate to help us develop promote sustainable agricultural practices</p>      
+            <button onClick={() => router.push("/sponsor")} className={styles.sectionButton}>
               See List
             </button>
         </div>

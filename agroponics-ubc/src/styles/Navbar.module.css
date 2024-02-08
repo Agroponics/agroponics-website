@@ -12,6 +12,12 @@
     transition: ease-in 0.2s;
 }
 
+.navlogo {
+    background-image: url(../images/logo.png);
+    width: 50px;
+    height: auto;
+}
+
 .active {
     width: 100vw;
     padding: 30px 0;

@@ -41,23 +41,24 @@ function Navbar() {
     <>
       <nav className={navbar ? (styles.active) : styles.nav}>
         <a className={styles.navIcon} onClick={() => router.push('/')}>
-          <h2>InvasivePlantsPW</h2>
+          <div style={styles.navlogo}></div>
+          <h2>UBC Agroponics</h2>
         </a>
         <div className={styles.linksContainer}>
             <span onClick={() => router.push('/')}>
               Home
             </span>
-            <span onClick={() => router.push('/invasivePlants')}>
-              Invasive Species
-            </span>
             <span onClick={() => router.push('/about')}>
               About Us
             </span>
-            <span onClick={flashTitle}>
-              Contact
+            <span onClick={() => router.push('/join')}>
+              Join The Team
             </span>
-            <span className={styles.volunteerButton} onClick={() => router.push('/volunteer')}>
-              Volunteer
+            <span className={styles.volunteerButton} onClick={() => router.push('/sponsor')}>
+              Sponsor Us
+            </span>
+            <span onClick={flashTitle}>
+              Contact Us
             </span>
         </div>
       </nav>
