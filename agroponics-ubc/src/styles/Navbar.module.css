@@ -8,14 +8,9 @@
     justify-content: center;
     position: fixed;
     z-index: 10;
-    background-color: whitesmoke; /* make transparent if background not white*/
+    background-color: rgb(0, 0, 0, 0.7); /*make transparent if background not white*/
+    color: #228B22;
     transition: ease-in 0.2s;
-}
-
-.navlogo {
-    background-image: url(../images/logo.png);
-    width: 50px;
-    height: auto;
 }
 
 .active {
@@ -38,8 +33,13 @@
 }
 
 .navIcon {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    left: 15px;
+    left: 15px; 
     cursor: pointer;
     color: #228B22;
 }

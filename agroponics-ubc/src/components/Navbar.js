@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import styles from '../styles/Navbar.module.css';
+import Logo from "../images/logo.png";
+import Image from 'next/image';
 
 function Navbar() {
   const router = useRouter();
@@ -24,25 +26,15 @@ function Navbar() {
       };
     }, []);
 
-    const flashTitle = () => {
-      let delay = 400;    
-      router.push('#contactTitle');
-      setTimeout(() => {
-        let x = document.getElementById("contact");
-        let ogColor = x.style.backgroundColor;
-        x.style.backgroundColor = "yellow";
-        setTimeout(() => {
-          x.style.backgroundColor = ogColor;
-        }, delay);
-      }, delay);  
-    }     
-
   return (
     <>
       <nav className={navbar ? (styles.active) : styles.nav}>
-        <a className={styles.navIcon} onClick={() => router.push('/')}>
-          <div style={styles.navlogo}></div>
-          <h2>UBC Agroponics</h2>
+        <a className={styles.navIcon} onClick={() => router.push('/#')}>
+          <Image 
+            src={Logo}
+            alt='Our logo'
+          />
+           <h2>UBC Agroponics</h2>
         </a>
         <div className={styles.linksContainer}>
             <span onClick={() => router.push('/')}>
@@ -57,7 +49,7 @@ function Navbar() {
             <span className={styles.volunteerButton} onClick={() => router.push('/sponsor')}>
               Sponsor Us
             </span>
-            <span onClick={flashTitle}>
+            <span onClick={() => router.push('/')}>
               Contact Us
             </span>
         </div>
