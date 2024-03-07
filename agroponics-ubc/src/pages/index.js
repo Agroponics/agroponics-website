@@ -28,7 +28,7 @@ export default function Home() {
                   alt='Our logo'
             />
             <div>
-              <p>We are the best at what we do</p>
+              <h1>Be a part of the action</h1>
               <button className={styles.sectionButton} onClick={() => router.push('/join')}>Join Our Team</button>
             </div>            
           </div>
@@ -36,12 +36,14 @@ export default function Home() {
           
         <div className={styles.about}>
           <h1 className={styles.sectionTitle}>About Us</h1>
-          <p>we do plants!</p>
+          <div> 
             <Image 
-                  src={TeamPhoto}
-                  alt='The Team'
-                  className='homepageIMG'
+              src={TeamPhoto}
+              alt='The Team'
+              className='homepageIMG'
             />
+            <p>Our team is dedicated to finding ways to improve agriculture cultivation as we know it. We are currently working to convert </p>
+          </div>
         </div>
         <div className={styles.sponsorUs}>
             <h1 className={styles.sectionTitle}>Our Sponsors</h1>
