@@ -16,12 +16,12 @@ export default function Home() {
     <>
       <Head>
         <title>Agroponics UBC</title>
-        <meta name="description" content="UBC Agroponics "/>
+        <meta name="UBC Agroponics" content="UBC's first and only hydroponics engineering design team."/>
         <link rel="icon" href={Logo}/>
       </Head>
       <Navbar />
       <main className={styles.main}>
-        <div className={styles.landing}>
+        <section className={styles.landing}>
           <div>
             <Image 
                   src={Logo}
@@ -32,9 +32,9 @@ export default function Home() {
               <button className={styles.sectionButton} onClick={() => router.push('/join')}>Join Our Team</button>
             </div>            
           </div>
-        </div>
+        </section>
           
-        <div className={styles.about}>
+        <section className={styles.about}>
           <h1 className={styles.sectionTitle}>About Us</h1>
           <div> 
             <Image 
@@ -42,10 +42,15 @@ export default function Home() {
               alt='The Team'
               className='homepageIMG'
             />
-            <p>Our team is dedicated to finding ways to improve agriculture cultivation as we know it. We are currently working to convert </p>
+            <div>
+              <p>Our team is dedicated to finding ways to improve agriculture cultivation as we know it. We are currently working to convert </p>
+              <button onClick={() => router.push("/about")} className={styles.sectionButton}>
+                Learn more
+              </button>
+            </div>            
           </div>
-        </div>
-        <div className={styles.sponsorUs}>
+        </section>
+        <section className={styles.sponsorUs}>
             <h1 className={styles.sectionTitle}>Our Sponsors</h1>
             <div className={styles.sponsors}>
               <SponsorCard name="Thing 1" img={temp}/>
@@ -58,7 +63,7 @@ export default function Home() {
             <button onClick={() => router.push("/sponsor")} className={styles.sectionButton}>
               Sponsor Our Team
             </button>
-        </div>
+        </section>
       </main>
       <Footer/>
     </>

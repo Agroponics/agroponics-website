@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
+import { useRouter, useLocation } from 'next/router';
 import styles from '../styles/Navbar.module.css';
 import Logo from "../images/logo.png";
 import Image from 'next/image';
 
 function Navbar() {
   const router = useRouter();
-  const [navbar,setNavbar] = useState(false);
-  //const [contact,flashContact] = useState(false);
+  //const location = useLocation();
 
+  const [navbar,setNavbar] = useState(false);
+  
   const changeNavBackground = () => {
     if (window.scrollY >= 1) {
       setNavbar(true);
@@ -43,14 +44,14 @@ function Navbar() {
             <span onClick={() => router.push('/about')}>
               About Us
             </span>
-            <span onClick={() => router.push('/join')}>
-              Join The Team
-            </span>
-            <span className={styles.volunteerButton} onClick={() => router.push('/sponsor')}>
-              Sponsor Us
-            </span>
             <span onClick={() => router.push('/')}>
               Contact Us
+            </span>
+            <span onClick={() => router.push('/sponsor')}>
+              Sponsor Us
+            </span>
+            <span className={styles.volunteerButton} onClick={() => router.push('/join')}>
+              Join The Team
             </span>
         </div>
       </nav>
