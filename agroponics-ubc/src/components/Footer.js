@@ -7,7 +7,7 @@ function Footer() {
 
   return (
     <>
-      <footer className={styles.footer} id="footer">
+      <footer className={styles.footer} id="contact">
         <div>
             <h4>Quick Links</h4>
             <span onClick={() => router.push('/join')}>
