@@ -10,12 +10,71 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 99px;
 }
 
+.heading {
+    width: 100%;
+    padding-top: 99px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+.heading > span {
+    font-size: 50pt;
+    color: #228B22;
+    padding-bottom: 10vh;
+}
+
+.desc {
+    text-align: left;
+}
+
+/* SECTIONS */
 .main > section {
-    height: 90vh;
+    display: flex;
+    flex-direction: column;
     width: 100vw;
+}
+
+.main > section > h1 {
+    color: #228B22;
+}
+
+.info {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ width: 80vw;
+}
+
+.automation {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: #228B22;
+}
+
+.plants {
+    
+} 
+
+.structure {
+    color: white;
+    background-color: #87d887;
+}
+
+.main > section > div > p {
+    width: 50%;
+    height: fit-content;
+}
+
+.main > section > div > img {
+    width: 50%;
+    height: 50vh;   
 }
 
 .goals {

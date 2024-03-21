@@ -43,7 +43,7 @@ export default function Home() {
               className='homepageIMG'
             />
             <div>
-              <p>Our team is dedicated to finding ways to improve agriculture cultivation as we know it. We are currently working to convert </p>
+              <p>Our team is dedicated to finding ways to improve agriculture cultivation as we know it. Currently we are converting a trailer into a fully-automated hydroponic farm.</p>
               <button onClick={() => router.push("/about")} className={styles.sectionButton}>
                 Learn more
               </button>
