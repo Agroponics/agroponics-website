@@ -16,7 +16,7 @@ function Footer() {
             <span onClick={() => router.push('/about')}>
               <a>About Us</a>
             </span>
-            <span onClick={() => router.push('/sponsor')}>
+            <span onClick={() => router.push('/')}>
               <a>Sponsor Us</a>
             </span>
             <span>
