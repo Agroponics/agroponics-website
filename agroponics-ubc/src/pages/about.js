@@ -17,7 +17,7 @@ export default function About() {
             <Head>
                 <title>Agroponics UBC</title>
                 <meta name="UBC Agroponics" content="UBC's first and only hydroponics engineering design team."/>
-                <link rel="icon" href={temp}/>
+                <link rel="icon" href="../images/temp.jpg"/>
             </Head>
             <Navbar />
             <main className={styles.main}>
