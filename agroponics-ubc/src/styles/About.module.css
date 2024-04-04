@@ -14,69 +14,65 @@
 
 .heading {
     width: 100%;
-    padding-top: 99px;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgb(0, 0, 0, 0.7);
+    background-image: url("../images/temp.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
 }
 
-.heading > span {
+.heading > div {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.heading > div >span {
     font-size: 50pt;
     color: #228B22;
-    padding-bottom: 10vh;
-}
-
-.desc {
-    text-align: left;
 }
 
 /* SECTIONS */
 .main > section {
     display: flex;
-    flex-direction: column;
     width: 100vw;
 }
 
-.main > section > h1 {
+/* GOALS */
+.goals {
+    display: flex;
+    flex-direction: column;    
+}
+
+
+
+/* SUBTEAMS */
+.subteams {
+    justify-content: center;
     color: #228B22;
 }
 
-.info {
- display: flex;
- flex-direction: row;
- justify-content: center;
- align-items: center;
- width: 80vw;
-}
-
-.automation {
-    display: flex;
-    flex-direction: row;
-    color: white;
-    background-color: #228B22;
-}
-
-.plants {
-    
-} 
-
-.structure {
-    color: white;
-    background-color: #87d887;
-}
-
-.main > section > div > p {
-    width: 50%;
-    height: fit-content;
-}
-
-.main > section > div > img {
-    width: 50%;
-    height: 50vh;   
-}
-
-.goals {
+.subteams > div {
+    width: 25vw;
+    margin: 2vw;
+    height: 100%;
     
 }
+
+.subteams > div > img {
+    width: 100%;
+    height: 30vh;
+}
+
+/* MEET THE TEAM */
+
+
+/* JOIN THE TEAM */

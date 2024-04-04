@@ -44,10 +44,10 @@ function Navbar() {
             <span onClick={() => router.push('/about')}>
               About Us
             </span>
-            <span onClick={() => router.push('/')}>
+            <span onClick={() => router.push('#contact')}>
               Contact Us
             </span>
-            <span onClick={() => router.push('/sponsor')}>
+            <span onClick={() => router.push('/')}>
               Sponsor Us
             </span>
             <span className={styles.volunteerButton} onClick={() => router.push('/join')}>

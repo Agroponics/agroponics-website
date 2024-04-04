@@ -13,7 +13,7 @@ export default function Join() {
             <Head>
                 <title>Agroponics UBC</title>
                 <meta name="UBC Agroponics | Join" content="Join our team"/>
-                <link rel="icon" href={Logo}/>
+                <link rel="icon" href="../images/temp.jpg"/>
             </Head>
             <Navbar />
             <main>
