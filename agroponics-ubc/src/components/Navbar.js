@@ -7,9 +7,13 @@ import Image from 'next/image';
 function Navbar() {
   const router = useRouter();
   //const location = useLocation();
+  var linksHidden = false;
 
   const [navbar,setNavbar] = useState(false);
   
+  /*
+  * This will look at the distance the user has scrolled to determing the 
+  */
   const changeNavBackground = () => {
     if (window.scrollY >= 1) {
       setNavbar(true);
@@ -19,6 +23,9 @@ function Navbar() {
     }
   }
 
+    /*
+    * This is used to trigger the add a shadow under the navbar after it scrolls down a certain distance
+    */
     useEffect(()=>{
       window.addEventListener('scroll',changeNavBackground);
 
@@ -26,6 +33,19 @@ function Navbar() {
         window.removeEventListener('scroll', changeNavBackground)
       };
     }, []);
+
+    // check if button is pressed
+    function toggleLinks() {
+        if (linksHidden) {
+          
+        }
+        
+        else {
+         
+        }           
+        
+        linksHidden = !linksHidden;
+    }
 
   return (
     <>
@@ -35,9 +55,9 @@ function Navbar() {
             src={Logo}
             alt='Our logo'
           />
-           <h2>UBC Agroponics</h2>
+          <h2>UBC Agroponics</h2>
         </a>
-        <div className={styles.linksContainer}>
+        <div className={styles.linksContainer} id='links'>
             <span onClick={() => router.push('/')}>
               Home
             </span>
@@ -47,12 +67,15 @@ function Navbar() {
             <span onClick={() => router.push('#contact')}>
               Contact Us
             </span>
-            <span onClick={() => router.push('/')}>
+            <span onClick={() => router.push('/sponsor')}>
               Sponsor Us
             </span>
             <span className={styles.volunteerButton} onClick={() => router.push('/join')}>
               Join The Team
             </span>
+        </div>
+        <div className={styles.navButton} id='navButton' onClick={toggleLinks()}>
+          X
         </div>
       </nav>
     </>

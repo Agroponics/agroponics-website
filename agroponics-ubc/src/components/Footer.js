@@ -16,22 +16,17 @@ function Footer() {
             <span onClick={() => router.push('/about')}>
               <a>About Us</a>
             </span>
-            <span onClick={() => router.push('/')}>
+            <span onClick={() => router.push('/sponsor')}>
               <a>Sponsor Us</a>
-            </span>
-            <span>
-              <a href="https://www2.gov.bc.ca/gov/content/environment/plants-animals-ecosystems/invasive-species/reporting-invasive-species" target="_blank" rel="noreferrer">
-                Check Out our GitHub
-              </a>
             </span>
         </div>
         <div>
-          <h4>Volunteer Links</h4>
+          <h4>Follow Us</h4>
             <span>
-              <a href="https://pacificspiritparksociety.org/programs/stewardship/" target="_blank" rel="noreferrer">PSPS EcoTeam</a>
+              <a href="" target="_blank" rel="noreferrer">GitHub</a>
             </span>
             <span>
-              <a href="http://jerichostewardship.ca/volunteer/" target="_blank" rel="noreferrer">Jericho Stewardship Group</a>
+              <a href="" target="_blank" rel="noreferrer">Instagram</a>
             </span>
         </div>
         <div className={styles.contact}>
@@ -41,10 +36,7 @@ function Footer() {
               V6T 1Z4, Vancouver, BC, Canada
             </span>
             <span>
-                123-456-7890
-            </span>
-            <span>
-              <a href="mailto:noahbaron91@gmail.com" rel="noreferrer">agroponicsubc@gmail.com</a>
+              <a href="mailto:agroponicsubc@gmail.com" rel="noreferrer">agroponicsubc@gmail.com</a>
             </span>
         </div>
       </footer>

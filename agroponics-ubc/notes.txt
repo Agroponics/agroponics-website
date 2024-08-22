@@ -1,0 +1,27 @@
+AVAILABLE ON MOBILE
+
+NAVBAR
+- Drop down from About Us to show subteams
+
+- JOIN THE TEAM GET GOOGLE FORM
+
+HOMEPAGE:
+
+- about section
+    uniform gap, separate the text and image
+    - put text all against left side?
+
+   take out sponsors on home page
+
+   Join Team
+
+   - LinkedIn straight to Agrobot LinkedIn
+   - Instagram to Insta 
+
+ABOUT US PAGE
+
+
+
+SPONSOR US
+- Sponsors are all agrobots 
+Only have form for people to sponsor

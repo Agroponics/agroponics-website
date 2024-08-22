@@ -79,3 +79,34 @@
     transform: scale(1.05);
     font-weight: 550;
 }
+
+.navButton {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    right: 0;
+    cursor: default;
+    background-color: #228B22;
+    color: white;
+    display: none;
+}
+
+/* FOR SMALL SCREEN */
+@media only screen and (max-width: 600px)  {
+    .nav {
+        height: 5vh;
+    }
+
+    .navIcon > {
+        height: 40px;
+        width: 40px;
+    }
+
+    .linksContainer {
+        visibility: hidden;
+    }
+
+    .navButton {
+        display: inline-block;
+    }
+}

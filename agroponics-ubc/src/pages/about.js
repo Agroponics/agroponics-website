@@ -23,62 +23,65 @@ export default function About() {
             <main className={styles.main}>
                 <section className={styles.heading}>
                     <div>
-                        <span>Who Are We?</span>
+                        <span>About Us</span>
                     </div>
                 </section>
 
                 <section className={styles.goals}>
-                    <h1 className={styles.header}>Our goals</h1>
+                    <h2 className={styles.header}>Our goals</h2>
                     <div className={styles.info}>
                         <p className={styles.desc}>
                             Our team is currently working on turning an old trailer into an automated hydroponic arugula farm. 
                             Ultimately we aim to completely automate the process without anyone needing to step in the trailer for weeks at a time. 
-                            Each of our different subteams has divided the problem to tackle different challenges:                       
+                            Each of our different subteams address unique challenges and goals:                       
                         </p>
                     </div>              
                 </section>
 
                 <section className={styles.subteams}>
+                    <h1>Subteams</h1>
                     <div>
-                        <h2>Automation</h2>
-                        <Image 
-                            src={temp}
-                            alt='Our logo'
-                        />
-                        <p>
-                            Automation is responsible for making the hydroponic farm fully automatic so that it requires minimal human interaction.
-                            This means programming a system that uses various sensors to automatically sustain the plants and keep them at optimal growing conditions. 
-                            This will later involve creating a web application that monitors conditions in the trailer, creating an AI to identify when plants are ready to harvest, 
-                            and make a robot that harvests and transfers plants to storage without a human assistance.
-                        </p>
-                    </div>
-                    <div>
-                        <h2>Structure</h2>
-                        <Image 
-                            src={temp}
-                            alt='Our logo'
-                        />
-                        <p>
-                            The plants team is the heart of our team.
-                            The goal is to research how growing plants hydroponically compares to traditional agricultural methods.
-                            This will involve investigating optimal conditions to maximize plant quality and growth speed in a hydroponic system. 
-                            and experimenting with plants that aren't typically grown in a hydroponic system (e.g. tomatoes).
-                        </p>
-                    </div>
-                    <div>
-                        <h2>Plants</h2>
-                        <Image 
-                            src={temp}
-                            alt='Our logo'
-                        />
-                        <p>
-                            Without the structure team, our plants wouldn't have a home. 
-                            Structure builds all the necessary structures for the plants, which includes insulation, heating, and power. 
-                            In the future this will involve implementing solar panels to power the farm and creating a rain-catch system to get water.
-                        </p>
+                        <div>
+                            <h2>Automation</h2>
+                            <Image 
+                                src={temp}
+                                alt='Our logo'
+                            />
+                            <p>
+                                Automation is responsible for making the hydroponic farm fully automatic so that it requires minimal human interaction.
+                                This means programming a system that uses various sensors and mechanisms to care for the plants and keep them at optimal growing conditions. 
+                                This will later involve creating a web application that monitors conditions in the trailer, creating an AI to identify when plants are ready to harvest, 
+                                and building a robot that harvests, transfers and stores crops for pickup.
+                            </p>
+                        </div>
+                        <div>
+                            <h2>Plants</h2>
+                            <Image 
+                                src={temp}
+                                alt='Our logo'
+                            />
+                            <p>
+                                The plants team does the research to figure out how to optimize a hydroponic setup to grow the best possble crops.
+                                This involves investigating various conditions to see their effects on plant quality and growth speed when using hydroponics, 
+                                and experimenting with plants that aren't typically grown in a hydroponic system (e.g. tomatoes).
+                            </p>
+                        </div>
+                        <div>
+                            <h2>Structure</h2>
+                            <Image 
+                                src={temp}
+                                alt='Our logo'
+                            />
+                            <p>
+                                Without the structure team, our plants wouldn't have a home. 
+                                Structure builds the hyrdroponic setup itself, as well as the trailer its stored in.
+                                This includes woodworking, insulation, heating, the electrical power system, water systems. 
+                                For the futurewe currently plan to implement solar panels to power the setup and creating a rain-catch system to get water.
+                            </p>
+                        </div>
                     </div>
                 </section>
-                
+                 
                 <section>
                     <h1 className={styles.header}>Meet the team</h1>
                 </section>
