@@ -18,35 +18,11 @@ export default function Sponsor() {
                 <meta name="UBC Agroponics | Join" content="Join our team"/>
                 <link rel="icon" href="../images/temp.jpg"/>
             </Head>
-            <Navbar />
+            <Navbar/>
             <main>
-                <h1>Join Our List Of Sponsors</h1>
-                <p></p>
-                <section id="current_sponsors">
-                <Image 
-                            src={temp}
-                            alt='Our logo'
-                />
-                <Image 
-                            src={temp}
-                            alt='Our logo'
-                />
-                <Image 
-                            src={temp}
-                            alt='Our logo'
-                />
-                <Image 
-                            src={temp}
-                            alt='Our logo'
-                />
-                <Image 
-                            src={temp}
-                            alt='Our logo'
-                />
-                </section>
-                <section id="options">
+                <div className={styles.form}>
 
-                </section>
+                </div>
             </main>
             <Footer/>
         </>

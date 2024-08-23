@@ -11,28 +11,18 @@ import TeamPhoto from '../images/temp.jpg';
 import HydroponicsExample from '../images/temp.jpg';
 import temp from '../images/temp.jpg';
 import Logo from '../images/logo.png';
-
 export default function Home() {
   const router = useRouter();
-  const meta = {
-    title: 'UBC Agroponics',
-    description: 'A student-led UBC design team building sustainable hydroponic farming setups right on campus.',
-    canonical: 'https://ubcagroponics.com/',
-    meta: {
-        charset: 'utf-8',
-        name: {
-            keywords: 'react,meta,document,html,tags'
-        }
-    ``}
-    }
 
   return (
     <>
-      <DocumentMeta {...meta} />
       <Head>
-        <title>Agroponics UBC</title>
-        <meta name="UBC Agroponics" content="UBC's first and only hydroponics engineering design team."/>
-        <link rel="icon" href={Logo}/>
+        <title>AgroPonics UBC</title>
+        <meta name='title' content='Agroponics UBC'/>
+        <meta name="description" content="UBC's first hydroponics engineering design team."/>
+        <meta charSet='utf-8'/>
+        <meta name='viewport' content='width=device-width, initial-scale=1'/>
+        <link rel="icon" href="https://ubcagroponics.com/favicon.ico"/>
       </Head>
       <Navbar />
       <main className={styles.main}>
@@ -66,15 +56,15 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={styles.about}>
-          <h1>OUR PLAN</h1>
+        <section className={styles.plan}>
+          <h1 className={styles.sectionTitle}>OUR PLAN</h1>
           <div>
+            <p>Currently we are working on converting an old trailer into a hydroponic farm that will be used to grow arugula.</p>
             <Image 
               src={TeamPhoto}
               alt='CAD Model of our hydroponic setup in the trailer'
               className={styles.homepageIMG}
             />
-            <p>Currently we are working on converting an old trailer into a hydroponic farm that will be used to grow arugula.</p>
           </div>
         </section>
 

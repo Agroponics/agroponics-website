@@ -25,4 +25,5 @@ Sponsor Us
 
 ### Ideas for other Features to include in the website:
 
+- Blog
 - What hydroponics setup are you? Buzzfeed-style quiz

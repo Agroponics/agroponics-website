@@ -8,16 +8,14 @@ function Footer() {
   return (
     <>
       <footer className={styles.footer} id="contact">
-        <div>
-            <h4>Quick Links</h4>
-            <span onClick={() => router.push('/join')}>
-              <a>Join Us</a>
+      <div className={styles.contact}>
+            <h4 id='contactTitle'>Contact Us</h4>
+            <span>
+              2345 E Mall,<br/>
+              V6T 1Z4, Vancouver, BC, Canada
             </span>
-            <span onClick={() => router.push('/about')}>
-              <a>About Us</a>
-            </span>
-            <span onClick={() => router.push('/sponsor')}>
-              <a>Sponsor Us</a>
+            <span>
+              <a href="mailto:agroponicsubc@gmail.com" rel="noreferrer">agroponicsubc@gmail.com</a>
             </span>
         </div>
         <div>
@@ -29,14 +27,16 @@ function Footer() {
               <a href="" target="_blank" rel="noreferrer">Instagram</a>
             </span>
         </div>
-        <div className={styles.contact}>
-            <h4 id='contactTitle'>Contact Us</h4>
-            <span>
-              2345 E Mall,<br/>
-              V6T 1Z4, Vancouver, BC, Canada
+        <div>
+            <h4>Quick Links</h4>
+            <span onClick={() => router.push('/join')}>
+              <a>Join Us</a>
             </span>
-            <span>
-              <a href="mailto:agroponicsubc@gmail.com" rel="noreferrer">agroponicsubc@gmail.com</a>
+            <span onClick={() => router.push('/about')}>
+              <a>About Us</a>
+            </span>
+            <span onClick={() => router.push('/sponsor')}>
+              <a>Sponsor Us</a>
             </span>
         </div>
       </footer>

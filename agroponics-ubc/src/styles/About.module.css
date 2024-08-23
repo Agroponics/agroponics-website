@@ -1,7 +1,12 @@
 /*
  * Colours:
- *  #228B22 green
- * 
+ *  #228B22     green
+ *  #00C914     different green (plants)
+ *  #29AF34     even darker green
+ *  #B30600     red (structure)
+ *  #8E0500     maroon
+ *  #3760E3     blue (automation)
+ *  #2347BD     darker blue
 */
 
 .main {
@@ -69,13 +74,13 @@
 /* SUBTEAMS */
 .subteams {
     justify-content: center;
+    text-align: center;
     color: #228B22;
     flex-direction: column;
 }
 
 .subteams > h1 {
     font-size: xx-large;
-    text-align: center;
 }
 
 .subteams > div {
@@ -100,7 +105,22 @@
     color: #333;
 }
 
+/* SUBTEAM SECTIONS */
+
+.subteamIMG {
+    width: 40vw;
+    height: 30vh;
+}
+
+/* AUTOMATION */
+
+/* PLANTS */
+
+/* STRUCTURE */
+
+
 /* MEET THE TEAM */
 
 
 /* JOIN THE TEAM */
+
