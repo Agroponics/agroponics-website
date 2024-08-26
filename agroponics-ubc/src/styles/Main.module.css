@@ -101,55 +101,36 @@
 
 /* ABOUT and PLAN SECTIONS */
 
-.about, .plan {
-  display: flex;
-  flex-direction: column;
-  gap: 3vw;
-  padding: 5vh;
-  height: 100vh;
-  margin-bottom: 15vh;
-}
-
-.about > div, .plan > div {
+.info {
+  width: 80vw;
+  height: auto;
   display: flex;
   flex-direction: row;
+  gap: 3vw;
+  margin: 15vh 0;
 }
 
-.about > div > img, .plan > div > img {
-  width: 40vw;
-  height: 50vh;
-  object-fit: cover;
-  justify-content: center;
-  text-align: justify;
-}
-
-.about > div > div {
+.info > div {
   display: flex;
   flex-direction: column;
-  width: 35vw;
+  width: 40%;
   justify-content: center;
-  align-items: center;
-  text-align: left;
-  padding: 5vh;
 }
 
-.about>div>h2 {
-  color: #228B22;
-  font-size: 36px;
-  margin-bottom: 10px;
-  text-align: center;
+.info > div > button {
+  width: 20vw;
+  margin: 0 auto;
 }
 
-.about>div>p {
+.info > div > p {
   line-height: 1.75;
 }
 
-/* PLAN */
-.plan {
-  display: flex;
-  flex-direction: column;
+.info > img {
   height: 50vh;
-  width: 80vw;
+  width: 50%;
+  justify-content: center;
+  text-align: justify;
 }
 
 

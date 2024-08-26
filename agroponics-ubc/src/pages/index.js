@@ -41,32 +41,33 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={styles.about}>
-          <h1 className={styles.sectionTitle}>ABOUT US</h1>
-          <div> 
-            <Image 
-              src={TeamPhoto}
-              alt='The Team'
-              className={styles.homepageIMG}
-            />
-            <div>
-              <p>Our team is dedicated to finding ways to improve agriculture cultivation as we know it. Currently we are converting a trailer into a fully-automated hydroponic farm.</p>
-              <button onClick={() => router.push("/about")} className={styles.sectionButton}>
-                Learn more
-              </button>
-            </div>            
-          </div>
+        <section className={styles.info}>
+          <div>
+            <h1 className={styles.sectionTitle}>ABOUT US</h1>
+            <p>Our team is dedicated to finding ways to improve agriculture cultivation as we know it. Currently we are converting a trailer into a fully-automated hydroponic farm.</p>
+            <button onClick={() => router.push("/about")} className={styles.sectionButton}>
+              Learn more
+            </button>
+          </div>    
+          <Image 
+            src={TeamPhoto}
+            alt='The Team'
+            className={styles.homepageIMG}
+          />        
         </section>
 
-        <section className={styles.plan}>
-          <h1 className={styles.sectionTitle}>OUR PLAN</h1>
-          <div>
-            <p>Currently we are working on converting an old trailer into a hydroponic farm that will be used to grow arugula.</p>
-            <Image 
+        <section className={styles.info}>
+          <Image 
               src={TeamPhoto}
               alt='CAD Model of our hydroponic setup in the trailer'
               className={styles.homepageIMG}
             />
+          <div>
+            <h1 className={styles.sectionTitle}>OUR PLAN</h1>
+            <p>Currently we are working on converting an old trailer into a hydroponic farm that will be used to grow arugula.</p>
+            <button onClick={() => router.push("/join")} className={styles.sectionButton}>
+              Get Involved
+            </button>
           </div>
         </section>
 
