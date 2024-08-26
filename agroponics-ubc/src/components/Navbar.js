@@ -1,20 +1,19 @@
 import React, { useEffect, useState } from 'react';
-import { useRouter, useLocation } from 'next/router';
+import { useRouter } from 'next/router';
 import styles from '../styles/Navbar.module.css';
 import Logo from "../images/logo.png";
 import Image from 'next/image';
 
 function Navbar() {
   const router = useRouter();
-  //const location = useLocation();
   var linksHidden = false;
-
   const [navbar,setNavbar] = useState(false);
-  
+
+
   /*
   * This will look at the distance the user has scrolled to determing the 
   */
-  const changeNavBackground = () => {
+  const changeNavBackground = () => {    
     if (window.scrollY >= 1) {
       setNavbar(true);
     }

@@ -92,14 +92,19 @@
 }
 
 /* FOR SMALL SCREEN */
-@media only screen and (max-width: 600px)  {
-    .nav {
-        height: 5vh;
+@media only screen and (max-width: 800px)  {
+    .nav, .active {
+        height: 30px;
     }
 
     .navIcon > {
-        height: 40px;
-        width: 40px;
+        left: 5px;
+        width: 5px;
+        height: 5px;
+    }
+
+    .navIcon>h2 {
+        font-size: small;
     }
 
     .linksContainer {

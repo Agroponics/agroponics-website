@@ -1,12 +1,10 @@
 /*
  * Colours:
  *  #228B22     green
- *  #00C914     different green (plants)
- *  #29AF34     even darker green
- *  #B30600     red (structure)
- *  #8E0500     maroon
- *  #3760E3     blue (automation)
- *  #2347BD     darker blue
+ *  #A1EEBD     pastel green
+ *  #F6D6D6     pastel red (structure)
+ *  #7BD3EA     pastel blue (automation)
+ *  #F6F7C4     pastel yellow
 */
 
 .main {
@@ -55,7 +53,8 @@
 .goals {
     flex-direction: column; 
     justify-content: center;  
-    align-items: center; 
+    align-items: center;
+    margin: 5vh 0 8vh 0; 
 }
 
 .goals > * {
@@ -72,55 +71,107 @@
 }
 
 /* SUBTEAMS */
-.subteams {
+.subteamCards {
     justify-content: center;
     text-align: center;
-    color: #228B22;
+    color: #333;
     flex-direction: column;
 }
 
-.subteams > h1 {
+.subteamCards > h1 {
     font-size: xx-large;
+    color: #228B22;
 }
 
-.subteams > div {
+.subteamCards > div {
     width: 100vw;
+    height: 50vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.subteams > div > div {
+.subteamCards > div > div {
     width: 25vw;
-    margin: 2vw;
-    height: 100%;
+    height: 40vh;
+    margin: 2vw; 
+    border-radius: 40px;
+    transition: ease-in 0.25s;
+    background-color: #EEE;
+    border: 1px solid #CCC;
 }
 
-.subteams > div > div > img {
-    width: 100%;
-    height: 30vh;
+.subteamCards>div>div:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
-.subteams > div > div > p {
+.subteamCards > div > div > img { /* Temporary, replace later with icons */
+    height: 60%;
+    width: auto;
+}
+
+.subteamCards > div > div > p {
     color: #333;
 }
 
-/* SUBTEAM SECTIONS */
-
-.subteamIMG {
+.subteams>div>img {
     width: 40vw;
     height: 30vh;
 }
 
-/* AUTOMATION */
+.automation, .auto:hover {
+    background-color: #7BD3EA;
+}
 
-/* PLANTS */
+.plants, .plnt:hover {
+    background-color: #A1EEBD;
+}
 
-/* STRUCTURE */
+.structure, .struct:hover {
+    background-color: #F6D6D6;
+}
 
+.subteams {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-/* MEET THE TEAM */
+.subteams > div {
+    width: 90vw;
+    height: 60vh;
+    margin: 5vh 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 5vh 0;
+    gap: 5vw;
+    align-items: center;
+}
+
+.subteams > div > div {
+    width: 40%;
+    height: fit-content;
+    justify-content: center;  
+}
+
+.subteams > div > img {
+    height: 90%;
+    width: auto;
+}
 
 
 /* JOIN THE TEAM */
+.interested {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10vh;
+}
 
+.interested > div {
+    height: 30vh;
+    margin-bottom: 50px;
+}

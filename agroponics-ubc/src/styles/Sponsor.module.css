@@ -1,0 +1,85 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+    ), url('../images/forest.jpg');
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    color: white;
+}
+
+.form>h3{
+    font-size: 36px;
+    margin: 0;
+    text-align: center;
+}
+
+.form>form {
+    margin-top: 5vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form>form>input {
+    font-size: 18px;
+    border: 2px solid #228B22;
+    color: gray;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.form>form>button {
+    text-align: right;
+    width: fit-content;
+    background-color: #228B22;
+    color: white;
+    border: 2px solid #228B22;
+    font-size: 16px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: ease-in 0.2s;
+    margin-left: auto;
+}
+
+.form>form>button:hover {
+    background-color: white;
+    color: #228B22;
+    transform: scale(1.05);
+}
+
+/* CURRENTLY DISABLED AS WE HAVE NO SPONSORS*/
+
+.sponsors {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 7vw;
+    padding: 10vh;
+    justify-content: center;
+
+    /* Change once we have sponsors */
+    display: none;
+}
+
+.sponsors > a > div {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border-radius: 20px;
+    transition: ease-in 0.2s;
+}
+
+.sponsors>a>div:hover {
+    transform: scale(1.2);
+}
+
+.sponsors>a>div>img {
+    width: 100%;
+    height: 100%;
+
+}

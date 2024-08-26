@@ -20,3 +20,7 @@ a {
 p {
   font-size: large;
 }
+
+img {
+  object-fit: cover;
+}

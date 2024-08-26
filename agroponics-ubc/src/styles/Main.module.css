@@ -153,36 +153,17 @@
 }
 
 
-
-
 /* Sponsor Section*/
 .sponsorUs {
   text-align: center;
   justify-content: center;
-  padding: 5vh;
+  padding: 10vh;
 }
 
-.sponsors{
-  display: flex;
-  align-items: center;
-  gap: 2vw;
-  justify-content: center;
-  margin: 5vh 0;
+.sponsorUs > div {
+  margin: 10vh 0;
 }
 
-.sponsorCard {
-  display: grid;
-  grid-column: 1;
-  align-items: center;
-}
-.sponsorCard > img {
-  width: 10vw;
-  height: auto;
-}
-.sponsorCard > span {
-  text-align: center;
-  color: #228B22;
-}
 
 /* JOIN PAGE */
 .closed {
@@ -214,4 +195,10 @@
 
 .closed > div > button:hover {
   color: #333333;
+}
+
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+
 }

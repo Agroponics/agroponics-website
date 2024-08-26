@@ -1,10 +1,12 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Main.module.css';
+import { useRouter } from 'next/router';
+
+//Components
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import SponsorCard from '../components/SponsorCard';
-import { useRouter } from 'next/router';
+import TitleCard from '@/components/TitleCard';
 
 // Images
 import TeamPhoto from '../images/temp.jpg';
@@ -69,18 +71,17 @@ export default function Home() {
         </section>
 
         <section className={styles.sponsorUs}>
-            <h1 className={styles.sectionTitle}>SPONSOR US</h1>
-            <div className={styles.sponsors}>
-              <SponsorCard name="Thing 1" img={temp}/>
-              <SponsorCard name="Thing 2" img={temp}/>
-              <SponsorCard name="Thing 3" img={temp}/>
-              <SponsorCard name="Thing 4" img={temp}/>
-              <SponsorCard name="Thing 5" img={temp}/>
-            </div>
+          <TitleCard 
+            text="SPONSOR US"
+            img={temp}
+          />
+          <div>
             <p>Donate to help us develop new technologies that support sustainable agricultural practices</p>      
             <button onClick={() => router.push("/sponsor")} className={styles.sectionButton}>
               Sponsor Our Team
             </button>
+          </div>
+          
         </section>
       </main>
       <Footer/>
