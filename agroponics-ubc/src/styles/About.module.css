@@ -106,7 +106,7 @@
     transform: scale(1.05);
 }
 
-.subteamCards > div > div > img { /* Temporary, replace later with icons */
+.subteamCards > div > div > svg { /* Temporary, replace later with icons */
     height: 60%;
     width: auto;
 }

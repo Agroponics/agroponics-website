@@ -81,26 +81,32 @@
 }
 
 .navButton {
-    width: 70px;
-    height: 70px;
-    border-radius: 10px;
+    height: 50px;
+    width: 50px;
     right: 0;
-    cursor: default;
-    background-color: #228B22;
-    color: white;
-    display: none;
+    cursor: pointer;
+    margin-right: 5%;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    visibility: hidden;
 }
 
 /* FOR SMALL SCREEN */
-@media only screen and (max-width: 800px)  {
+@media only screen and (max-width: 800px)  {  
     .nav, .active {
         height: 30px;
+        
     }
 
-    .navIcon > {
-        left: 5px;
-        width: 5px;
-        height: 5px;
+    .navIcon > img {
+        height: 80%;
+        width: auto;
+    }
+
+    .navButton {
+        visibility: visible;
     }
 
     .navIcon>h2 {
@@ -111,7 +117,26 @@
         visibility: hidden;
     }
 
-    .navButton {
-        display: inline-block;
+    .mobileMenu {
+        position: fixed;
+        visibility: visible;
+        z-index: 0;
+        right: 0px;
+        top: 0px;
+        height: 100vh;
+        width: 90vw;
+        background-color: whitesmoke;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 5%;
+        transition: 0.2s ease-in;
+    }
+
+    .mobileMenu>span {
+        width: 50%;
+        margin: 0 auto;
     }
 }

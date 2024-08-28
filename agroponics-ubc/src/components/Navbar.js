@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/router';
 import styles from '../styles/Navbar.module.css';
 import Logo from "../images/logo.png";
@@ -6,8 +6,10 @@ import Image from 'next/image';
 
 function Navbar() {
   const router = useRouter();
-  var linksHidden = false;
-  const [navbar,setNavbar] = useState(false);
+  var linksHidden = true;
+  const [userScrolled,setNavbar] = useState(false);
+
+  const [menuActive,toggleNavMenu] = useState(false);
 
 
   /*
@@ -22,33 +24,27 @@ function Navbar() {
     }
   }
 
+  const toggleLinks = () => {
+    if (linksHidden) toggleNavMenu(true);
+    else toggleNavMenu(false);
+
+    linksHidden = !linksHidden;
+  }
+
     /*
     * This is used to trigger the add a shadow under the navbar after it scrolls down a certain distance
     */
     useEffect(()=>{
       window.addEventListener('scroll',changeNavBackground);
-
+      
       return () => {
-        window.removeEventListener('scroll', changeNavBackground)
+        window.removeEventListener('scroll', changeNavBackground);
       };
     }, []);
 
-    // check if button is pressed
-    function toggleLinks() {
-        if (linksHidden) {
-          
-        }
-        
-        else {
-         
-        }           
-        
-        linksHidden = !linksHidden;
-    }
-
   return (
     <>
-      <nav className={navbar ? (styles.active) : styles.nav}>
+      <nav className={userScrolled ? (styles.active) : styles.nav}>
         <a className={styles.navIcon} onClick={() => router.push('/#')}>
           <Image 
             src={Logo}
@@ -56,25 +52,33 @@ function Navbar() {
           />
           <h2>UBC Agroponics</h2>
         </a>
-        <div className={styles.linksContainer} id='links'>
+        <div className={menuActive ? (styles.mobileMenu) : styles.linksContainer} id='links'>
             <span onClick={() => router.push('/')}>
               Home
             </span>
             <span onClick={() => router.push('/about')}>
-              About Us
+              About
+            </span>
+            <span onClick={() => router.push('/projects')}>
+              Projects
             </span>
             <span onClick={() => router.push('#contact')}>
-              Contact Us
+              Contact
             </span>
             <span onClick={() => router.push('/sponsor')}>
-              Sponsor Us
+              Sponsor
             </span>
-            <span className={styles.volunteerButton} onClick={() => router.push('/join')}>
-              Join The Team
+            <span className={styles.volunteerButton}>
+            <a href='https://forms.gle/1xvmDm1rFjiyZ1GU9'>Join The Team</a>
             </span>
         </div>
-        <div className={styles.navButton} id='navButton' onClick={toggleLinks()}>
-          X
+        <div className={styles.navButton} onClick={toggleLinks}>
+          <svg id='menu' xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#228b22">
+            {
+              menuActive ? (<path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>) :
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+            }
+          </svg>
         </div>
       </nav>
     </>

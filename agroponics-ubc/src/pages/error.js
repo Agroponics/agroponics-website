@@ -4,20 +4,19 @@ import Navbar from "../components/Navbar";
 import styles from "../styles/Main.module.css";
 import { useRouter } from 'next/router';
 
-export default function Join() {
+export default function Error() {
     const router = useRouter();
 
     return (
         <>
             <Head>
-                <title>AgroPonics UBC || Join</title>
-                <meta name="UBC Agroonics | Join" content="Join our team"/>
+                <title>Page Unavailable</title>
             </Head>
             <Navbar />
             <main>
                 <div className={styles.closed} id="closed">
                     <div>
-                        <span>Sorry. We are currently not taking any applications.</span>
+                        <span>Sorry, this page is currently unavailable.</span>
                         <button onClick={() => router.push('/')}>&lt; Return to Home</button>
                     </div>
                 </div>

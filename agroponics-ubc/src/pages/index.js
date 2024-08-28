@@ -21,7 +21,10 @@ export default function Home() {
       <Head>
         <title>AgroPonics UBC</title>
         <meta name='title' content='Agroponics UBC'/>
-        <meta name="description" content="UBC's first hydroponics engineering design team."/>
+        <meta name="description" content="At Agroponics UBC, we are pioneers in the field of sustainable agriculture, leveraging cutting-edge technology to revolutionize hydroponic farming. Our mission is to create innovative, eco-friendly solutions that reduce environmental impact and optimize crop production. By integrating advanced IoT systems, real-time monitoring, and automated control, we ensure efficient resource use while producing high-yield, nutritionally rich crops.
+          Our multidisciplinary team, comprising experts in engineering, environmental science, and plant biology, collaborates to design and implement state-of-the-art hydroponic systems. These systems are tailored to meet the challenges of modern agriculture, from water conservation to soil depletion. We are committed to feeding the world sustainably, one plant at a time.
+          Explore our projects to learn more about how we are pushing the boundaries of agricultural technology, from autonomous hydroponic systems to innovative plant growth experiments. Join us on our journey to transform the future of farming and contribute to a healthier, more sustainable planet."
+        />
         <meta charSet='utf-8'/>
         <meta name='viewport' content='width=device-width, initial-scale=1'/>
         <link rel="icon" href="https://ubcagroponics.com/favicon.ico"/>
@@ -35,8 +38,10 @@ export default function Home() {
                   alt='Our logo'
             />
             <div>
-              <h1>Help us make the future greener</h1>
-              <button className={styles.sectionButton} onClick={() => router.push('/join')}>Join Our Team</button>
+              <h1>Sustainable Innovation for a Hungry World</h1>
+              <a href='https://forms.gle/1xvmDm1rFjiyZ1GU9'>
+                <button className={styles.sectionButton}>Apply Today!</button>
+              </a>
             </div>            
           </div>
         </section>
@@ -44,7 +49,7 @@ export default function Home() {
         <section className={styles.info}>
           <div>
             <h1 className={styles.sectionTitle}>ABOUT US</h1>
-            <p>Our team is dedicated to finding ways to improve agriculture cultivation as we know it. Currently we are converting a trailer into a fully-automated hydroponic farm.</p>
+            <p>UBC Agroponics is an engineering design team project that engineers autonomous hydroponic systems through multidisciplinary collaboration. It integrates IoT for automation, structural design for optimized environments, and experimental research on plant growth. The aim is to enhance agricultural efficiency by reducing resource use and improving crop production in a controlled, sustainable setting. We have three subteams: automation, structure, and plants.</p>
             <button onClick={() => router.push("/about")} className={styles.sectionButton}>
               Learn more
             </button>
@@ -63,10 +68,10 @@ export default function Home() {
               className={styles.homepageIMG}
             />
           <div>
-            <h1 className={styles.sectionTitle}>OUR PLAN</h1>
+            <h1 className={styles.sectionTitle}>CURRENT PROJECTS</h1>
             <p>Currently we are working on converting an old trailer into a hydroponic farm that will be used to grow arugula.</p>
-            <button onClick={() => router.push("/join")} className={styles.sectionButton}>
-              Get Involved
+            <button onClick={() => router.push("/projects")} className={styles.sectionButton}>
+              Learn More
             </button>
           </div>
         </section>
@@ -81,11 +86,10 @@ export default function Home() {
             <button onClick={() => router.push("/sponsor")} className={styles.sectionButton}>
               Sponsor Our Team
             </button>
-          </div>
-          
+          </div> 
         </section>
       </main>
-      <Footer/>
+      <Footer/>      
     </>
   );
 }

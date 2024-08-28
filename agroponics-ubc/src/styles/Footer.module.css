@@ -24,11 +24,19 @@
 .footer > div > span {
     cursor: pointer;
     padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
 }
 
 .footer>div>span>a:hover {
     opacity: .6;
 }
+
+.footer>div>span>svg {
+    height: 30px;
+    width: 30px;
+}
+
 .footer > div > h4 {
     color: #228B22;
 }

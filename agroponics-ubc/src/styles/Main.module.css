@@ -75,6 +75,12 @@
   color: #228B22;
 }
 
+.landing>div>div>a{
+  margin: 0 auto;
+}
+
+
+
 .landinglogo {
   background-image: url(../images/logo.png);
   width: 50%; 
