@@ -53,6 +53,11 @@
     transform: scale(1.05);
 }
 
+.text {
+    width: 80%;
+    margin: 10vh auto;
+}
+
 /* CURRENTLY DISABLED AS WE HAVE NO SPONSORS*/
 
 .sponsors {

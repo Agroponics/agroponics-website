@@ -116,15 +116,15 @@
     color: #333;
 }
 
-.automation, .auto:hover {
+.auto:hover {
     background-color: #7BD3EA;
 }
 
-.plants, .plnt:hover {
+.plnt:hover {
     background-color: #A1EEBD;
 }
 
-.structure, .struct:hover {
+.struct:hover {
     background-color: #F6D6D6;
 }
 
@@ -152,6 +152,9 @@
     width: 40%;
     height: fit-content;
     justify-content: center;  
+}
+.subteams > div > div > h1 {
+    color: #228B22;
 }
 
 .subteams > div > img {

@@ -1,14 +1,28 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Projects.module.css';
-import { useRouter } from 'next/router';
+import { useState } from 'react';
 
 //Components
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import TitleCard from '@/components/TitleCard';
+import ProjectCard from "../components/projectCards";
+
+//Images
+import RaspberryPi from "../images/temp.jpg";
+import ESP32 from "../images/temp.jpg";
+import paint from "../images/projectIMGs/painting.jpg";
+import radishes from "../images/projectIMGs/radishes.jpg";
+import insulation from "../images/projectIMGs/insulation.jpg";
 
 export default function Projects() {
+    const [showInfo,toggleInfoContainer] = useState(false);
+
+    const toggleInfo = () => {
+
+    }
+
+    
     return(
         <>
             <Head>
@@ -27,15 +41,30 @@ export default function Projects() {
                 </div>
                 <section className={styles.subteams}>
                     <div className={styles.automation}>
-                        
+                        <h2>Automation</h2>
+                        <div>
+                            <ProjectCard text="Raspberry Pi Network Setup" img={RaspberryPi}/>
+                            <ProjectCard text="ESP32 Sensor Integration" img={ESP32}/>
+                        </div>                        
                     </div>
                     <div className={styles.plants}>
-
+                        <h2>Plants</h2>
+                        <div>
+                            <ProjectCard text="Radishes" img={radishes}/>
+                            
+                        </div>
                     </div>
                     <div className={styles.structure}>
-
+                        <h2>Structure</h2>
+                        <div>
+                            <ProjectCard text="Painting The Trailer" img={paint}/>
+                            <ProjectCard text="Insulation" img={insulation}/>
+                        </div>
                     </div>
                 </section>
+                <div className={styles.cardInfo} id='info'>
+
+                </div>
             </main>
             <Footer/>
         </>

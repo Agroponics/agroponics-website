@@ -10,7 +10,8 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-body {
+body, main {
+  width: 100vw;
   position: relative;
   overflow-x: hidden;
 }
@@ -26,4 +27,8 @@ p {
 
 img {
   object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+
 }

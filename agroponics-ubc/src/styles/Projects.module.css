@@ -23,5 +23,52 @@
 .subteams {
     width: 100%;
     background-color: whitesmoke;
+}
 
+.subteams > div {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 80%;
+    margin: 2% auto;
+}
+.subteams>div>div{
+    display: flex;
+    flex-direction: row;
+    gap: 5% ;
+    text-align: center;
+}
+.subteams>div>h2{
+    color: #228B22;
+}
+
+.projectCard {
+    width: 20%;
+    height: 100%;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    background-color: #DDD;
+    transition: 0.2s ease-in;
+    padding: 5px;
+}
+
+.projectCard:hover {
+    transform: scale(1.05);
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.projectCard>h3 {
+    color: #333;
+}
+.projectCard>img {
+    width: 100%;
+    height: 20vh;
+}
+
+.cardInfo {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0,0,0,0.7);
 }

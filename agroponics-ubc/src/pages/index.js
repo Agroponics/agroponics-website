@@ -86,13 +86,10 @@ export default function Home() {
         </section>
 
         <section className={styles.sponsorUs}>
-          <TitleCard 
-            text="SPONSOR US"
-            img={temp}
-          />
+          <TitleCard text="SPONSOR US"/>
           <div>
             <p>
-              Join us in revolutionizing sustainable agriculture by sponsoring Agroponics UBC, where your support will help students innovate in hydroponic technology
+              Join us in revolutionizing sustainable agriculture by sponsoring Agroponics UBC, where your support will help students innovate in hydroponic technology.
             </p>      
             <button onClick={() => router.push("/sponsor")} className={styles.sectionButton}>
               Sponsor Our Team
