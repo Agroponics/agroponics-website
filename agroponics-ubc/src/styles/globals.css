@@ -5,15 +5,14 @@ body {
   width: 100vw;
   padding: 0;
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  overflow-x: hidden;
   scroll-behavior: smooth;
   background-color: whitesmoke;
-  line-height: 1.5;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
   position: relative;
+  overflow-x: hidden;
 }
 
 a {

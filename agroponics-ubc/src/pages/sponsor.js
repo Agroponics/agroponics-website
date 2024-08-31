@@ -26,6 +26,10 @@ export default function Sponsor() {
                         <button type="submit" id="submit">Submit</button>
                     </form>
                 </div>
+                <div>
+                    The Agroponics project aims to address critical issues in modern agriculture, including water scarcity, soil depletion, and the need for sustainable farming practices. By developing an autonomous hydroponic system, the project seeks to optimize resource use, reduce environmental impact, and enhance crop yields. The project's objectives include the integration of IoT technologies for real-time monitoring and control, structural renovations to create a controlled growth environment, and experimental research to refine plant growth conditions.
+                    Funding is critical in advancing these objectives by supporting the acquisition of essential technologies, including sensors, microcontrollers, and structural materials. It enables the team to prototype and implement IoT systems for real-time monitoring and control, renovate the physical space to house the hydroponic systems, and conduct in-depth research on optimizing plant growth conditions. Your help will ensure the project's success in advancing sustainable agricultural practices. 
+                </div>
                 <div className={styles.sponsors}>
                     <a target="_blank">
                         <div>

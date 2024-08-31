@@ -1,0 +1,30 @@
+.closed {
+    background-size: auto;
+    width: 100vw;
+    height: 100vh;
+    color: #228B22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: center;
+    text-decoration: solid;
+    font-size: x-large;
+  }
+  .closed > div {
+    display: flex;
+    gap: 8vh;
+    flex-direction: column;
+  }
+  
+  .closed > div > button {
+    color: #228B22;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: medium;
+  }
+  
+  .closed > div > button:hover {
+    color: #333333;
+  }

@@ -12,12 +12,7 @@ export default function Projects() {
     return(
         <>
             <Head>
-                <title>AgroPonics UBC</title>
-                <meta name='title' content='Agroponics UBC'/>
-                <meta name="description" content="At Agroponics UBC, we are pioneers in the field of sustainable agriculture, leveraging cutting-edge technology to revolutionize hydroponic farming. Our mission is to create innovative, eco-friendly solutions that reduce environmental impact and optimize crop production. By integrating advanced IoT systems, real-time monitoring, and automated control, we ensure efficient resource use while producing high-yield, nutritionally rich crops.
-                Our multidisciplinary team, comprising experts in engineering, environmental science, and plant biology, collaborates to design and implement state-of-the-art hydroponic systems. These systems are tailored to meet the challenges of modern agriculture, from water conservation to soil depletion. We are committed to feeding the world sustainably, one plant at a time.
-                Explore our projects to learn more about how we are pushing the boundaries of agricultural technology, from autonomous hydroponic systems to innovative plant growth experiments. Join us on our journey to transform the future of farming and contribute to a healthier, more sustainable planet."
-                />
+                <title>AgroPonics UBC || Projects</title>
                 <meta charSet='utf-8'/>
                 <meta name='viewport' content='width=device-width, initial-scale=1'/>
                 <link rel="icon" href="https://ubcagroponics.com/favicon.ico"/>
@@ -25,18 +20,22 @@ export default function Projects() {
             <Navbar />
             <main>
                 <div className={styles.projectLanding}>
-                    <h1>Check Out Our Projects</h1>
-                    <h4>See what each of our subteams are doing</h4>
+                    <div>
+                        <h1>Check Out Our Projects</h1>
+                        <h4>See what each of our subteams are doing</h4>
+                    </div>
                 </div>
-                <div className={styles.automation}>
+                <section className={styles.subteams}>
+                    <div className={styles.automation}>
+                        
+                    </div>
+                    <div className={styles.plants}>
 
-                </div>
-                <div className={styles.plants}>
+                    </div>
+                    <div className={styles.structure}>
 
-                </div>
-                <div className={styles.structure}>
-
-                </div>
+                    </div>
+                </section>
             </main>
             <Footer/>
         </>

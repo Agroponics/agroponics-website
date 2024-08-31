@@ -57,6 +57,8 @@
 
 .linksContainer > span {
     cursor:pointer;
+    margin: 0;
+    padding: 0;
 }
 .linksContainer>span:hover {
     opacity: .6;
@@ -64,6 +66,7 @@
 
 .volunteerButton {
     border: 2px solid #228B22;
+    width: max-content;
     border-radius: 5px;
     background-color: #228B22;
     color: white;
@@ -86,10 +89,11 @@
     right: 0;
     cursor: pointer;
     margin-right: 5%;
+    padding: 0;
     position: fixed;
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    z-index: 2;
     visibility: hidden;
 }
 
@@ -97,7 +101,8 @@
 @media only screen and (max-width: 800px)  {  
     .nav, .active {
         height: 30px;
-        
+        overflow-x: hidden;
+        width: 100%;
     }
 
     .navIcon > img {
@@ -114,7 +119,7 @@
     }
 
     .linksContainer {
-        visibility: hidden;
+        display: none;
     }
 
     .mobileMenu {
@@ -135,8 +140,22 @@
         transition: 0.2s ease-in;
     }
 
-    .mobileMenu>span {
-        width: 50%;
+    .mobileMenu>span, .mobileMenu>button {
+        width: 40%;
         margin: 0 auto;
+        cursor: pointer;
+    }
+
+    .mobileMenu>span:hover {
+        color: #228B22;
+    }
+
+    .coverBackground {
+        position: fixed;
+        z-index: 1;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(0,0,0,0.8);
+        overflow: hidden;
     }
 }

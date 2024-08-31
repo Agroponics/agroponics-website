@@ -33,7 +33,7 @@
 
 /* LANDING SECTION */
 .landing {
-  background-image: url("../images/forest.jpg");
+  background-image: url("../images/trailer.PNG");
   background-position: center;
   background-size: cover;
   background-repeat: none;
@@ -116,29 +116,39 @@
   margin: 15vh 0;
 }
 
-.info > div {
+.infoText {
   display: flex;
   flex-direction: column;
   width: 40%;
   justify-content: center;
 }
 
-.info > div > button {
+.infoText > button {
   width: 20vw;
   margin: 0 auto;
 }
 
-.info > div > p {
+.infoText > p {
   line-height: 1.75;
 }
 
-.info > img {
-  height: 50vh;
+.infoIMG {
+  display: flex;
+  flex-direction: column;
   width: 50%;
   justify-content: center;
   text-align: justify;
 }
 
+.infoIMG>img {
+  height: 50vh;
+}
+
+.infoIMG>span{
+  font-style: italic;
+  color: #777;
+  text-align: center;
+}
 
 /* Sponsor Section*/
 .sponsorUs {
@@ -151,41 +161,29 @@
   margin: 10vh 0;
 }
 
-
-/* JOIN PAGE */
-.closed {
-  background-size: auto;
-  width: 100vw;
-  height: 100vh;
-  color: #228B22;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  vertical-align: center;
-  text-decoration: solid;
-  font-size: x-large;
+.sponsorUs>div>p {
+  width: 60%;
+  margin: 0 auto 5% auto;
 }
-.closed > div {
-  display: flex;
-  gap: 8vh;
-  flex-direction: column;
-}
-
-.closed > div > button {
-  color: #228B22;
-  border: none;
-  background: none;
-  cursor: pointer;
-  font-size: medium;
-}
-
-.closed > div > button:hover {
-  color: #333333;
-}
-
 
 /* MOBILE */
 @media only screen and (max-width: 600px) {
+  /* LANDING*/
+  .landing>div {
 
+  }
+  .landing>div>div>h1 {
+    text-align: center;
+    width: 80vw;
+  }
+
+  /* INFO SECTIONS */
+  .info {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
 }

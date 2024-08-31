@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
-import styles from "../styles/Main.module.css";
+import styles from "../styles/Error.module.css";
 import { useRouter } from 'next/router';
 
 export default function Error() {

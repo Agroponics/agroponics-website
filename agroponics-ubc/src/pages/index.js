@@ -9,8 +9,8 @@ import Footer from '../components/Footer';
 import TitleCard from '@/components/TitleCard';
 
 // Images
-import TeamPhoto from '../images/temp.jpg';
-import HydroponicsExample from '../images/temp.jpg';
+import OurTeam from "../images/team/1.PNG";
+import trailerBack from "../images/trailer_behind.jpg";
 import temp from '../images/temp.jpg';
 import Logo from '../images/logo.png';
 export default function Home() {
@@ -47,29 +47,38 @@ export default function Home() {
         </section>
 
         <section className={styles.info}>
-          <div>
+          <div className={styles.infoText}>
             <h1 className={styles.sectionTitle}>ABOUT US</h1>
-            <p>UBC Agroponics is an engineering design team project that engineers autonomous hydroponic systems through multidisciplinary collaboration. It integrates IoT for automation, structural design for optimized environments, and experimental research on plant growth. The aim is to enhance agricultural efficiency by reducing resource use and improving crop production in a controlled, sustainable setting. We have three subteams: automation, structure, and plants.</p>
+            <p>UBC Agroponics is an engineering design team project that designs autonomous hydroponic systems through multidisciplinary collaboration. It integrates IoT for automation, structural design for optimized environments, and experimental research on plant growth. The aim is to enhance agricultural efficiency by reducing resource use and improving crop production in a controlled, sustainable setting. We have three subteams: automation, structure, and plants.</p>
             <button onClick={() => router.push("/about")} className={styles.sectionButton}>
               Learn more
             </button>
-          </div>    
-          <Image 
-            src={TeamPhoto}
-            alt='The Team'
-            className={styles.homepageIMG}
-          />        
+          </div>
+          <div className={styles.infoIMG}>
+            <Image 
+              src={OurTeam}
+              alt='Some of our teammates'
+              className={styles.homepageIMG}
+            />
+            <span>Some of our teammates</span>
+          </div>            
         </section>
 
         <section className={styles.info}>
-          <Image 
-              src={TeamPhoto}
-              alt='CAD Model of our hydroponic setup in the trailer'
-              className={styles.homepageIMG}
-            />
-          <div>
+          <div className={styles.infoIMG}>
+              <Image 
+                src={trailerBack}
+                alt='Back of trailer'
+                className={styles.homepageIMG}
+              />
+              <span>The back of our trailer under construction</span>
+          </div>
+          <div className={styles.infoText}>
             <h1 className={styles.sectionTitle}>CURRENT PROJECTS</h1>
-            <p>Currently we are working on converting an old trailer into a hydroponic farm that will be used to grow arugula.</p>
+            <p>
+              Each of our subteams are tackling various projects to put together our solution for sustainable agriculture. This includes a variety tasks like 
+              programming Raspberry Pis to collect data from numerous ESP32s, completely refurnishing the trailer to house the hydroponic system, growing various plants with Deep Water Culture hydroponics, and more.
+            </p>
             <button onClick={() => router.push("/projects")} className={styles.sectionButton}>
               Learn More
             </button>
@@ -82,7 +91,9 @@ export default function Home() {
             img={temp}
           />
           <div>
-            <p>Donate to help us develop new technologies that support sustainable agricultural practices</p>      
+            <p>
+              Join us in revolutionizing sustainable agriculture by sponsoring Agroponics UBC, where your support will help students innovate in hydroponic technology
+            </p>      
             <button onClick={() => router.push("/sponsor")} className={styles.sectionButton}>
               Sponsor Our Team
             </button>

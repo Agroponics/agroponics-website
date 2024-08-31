@@ -8,9 +8,7 @@ function Navbar() {
   const router = useRouter();
   var linksHidden = true;
   const [userScrolled,setNavbar] = useState(false);
-
   const [menuActive,toggleNavMenu] = useState(false);
-
 
   /*
   * This will look at the distance the user has scrolled to determing the 
@@ -25,11 +23,28 @@ function Navbar() {
   }
 
   const toggleLinks = () => {
-    if (linksHidden) toggleNavMenu(true);
-    else toggleNavMenu(false);
+    if (linksHidden) {
+      toggleNavMenu(true);
+    }
+    else {
+      toggleNavMenu(false);
+    }
 
     linksHidden = !linksHidden;
   }
+
+  const flashTitle = () => {
+    let delay = 800;    
+    router.push('#contact');
+    setTimeout(() => {
+      let x = document.getElementById("contact");
+      let ogColor = x.style.backgroundColor;
+      x.style.backgroundColor = "#FDFD96";
+      setTimeout(() => {
+        x.style.backgroundColor = ogColor;
+      }, delay);
+    }, 1000);  
+  }     
 
     /*
     * This is used to trigger the add a shadow under the navbar after it scrolls down a certain distance
@@ -52,7 +67,7 @@ function Navbar() {
           />
           <h2>UBC Agroponics</h2>
         </a>
-        <div className={menuActive ? (styles.mobileMenu) : styles.linksContainer} id='links'>
+        <div className={menuActive ? (styles.mobileMenu) : styles.linksContainer} onClick={menuActive ? (toggleLinks) : null}>
             <span onClick={() => router.push('/')}>
               Home
             </span>
@@ -62,15 +77,15 @@ function Navbar() {
             <span onClick={() => router.push('/projects')}>
               Projects
             </span>
-            <span onClick={() => router.push('#contact')}>
+            <span onClick={flashTitle}>
               Contact
             </span>
             <span onClick={() => router.push('/sponsor')}>
               Sponsor
             </span>
-            <span className={styles.volunteerButton}>
-            <a href='https://forms.gle/1xvmDm1rFjiyZ1GU9'>Join The Team</a>
-            </span>
+            <button className={styles.volunteerButton}>
+              <a href='https://forms.gle/1xvmDm1rFjiyZ1GU9'>Join The Team</a>
+            </button>
         </div>
         <div className={styles.navButton} onClick={toggleLinks}>
           <svg id='menu' xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#228b22">
@@ -81,7 +96,8 @@ function Navbar() {
           </svg>
         </div>
       </nav>
-    </>
+      {menuActive ? (<div className={styles.coverBackground} onClick={toggleLinks}/>) : null}
+    </> 
   );
 }
 

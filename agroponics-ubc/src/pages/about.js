@@ -11,6 +11,10 @@ import Image from "next/image";
 import temp from "../images/temp.jpg";
 import TitleCard from "@/components/TitleCard";
 
+import automationIMG from "../images/Tube.jpg";
+import plantsIMG from "../images/radish_science.jpg";
+import structureIMG from "../images/plants_in_trailer.jpg";
+
 export default function About() {
     const router = useRouter();
 
@@ -39,7 +43,7 @@ export default function About() {
                 </section>
 
                 <section className={styles.subteamCards}>
-                    <h1>Subteams</h1>
+                    <h1>Sub-Teams</h1>
                     <div>
                         <div className={styles.auto} onClick={() => router.push('#automation')}>
                             <h2>Automation</h2>
@@ -59,16 +63,13 @@ export default function About() {
                 <section className={styles.subteams}>
                     <div className={styles.automation} id="automation">
                         <Image 
-                            src={temp}
+                            src={automationIMG}
                             alt='Automation team'
                         />
                         <div>
                             <h1>AUTOMATION</h1>
                             <p>
-                                Automation is responsible for making the hydroponic farm fully automatic so that it requires minimal human interaction.
-                                This means programming a system that uses various sensors and mechanisms to care for the plants and keep them at optimal growing conditions. 
-                                This will later involve creating a web application that monitors conditions in the trailer, creating an AI to identify when plants are ready to harvest, 
-                                and building a robot that harvests, transfers and stores crops for pickup.
+                                The automation sub-team is an Internet of Things (IoT) project that focuses on designing and implementing autonomous farming, real-time monitoring, auto-regulated environments, and remote updates for hydroponic systems. The team’s goal is to use resources in agriculture (land, water, fertilizers, manpower) more efficiently to help improve our environment. Modern irrigation practices are exacerbating water scarcity, drying up entire water systems, and causing extensive land clearance for agriculture. To address these challenges, we leverage a wide variety of technologies to collect and communicate data from hydroponic systems, enabling us to simulate and optimize different preferred growing environments.
                             </p>
                         </div>
                     </div>
@@ -77,29 +78,24 @@ export default function About() {
                         <div>
                             <h1>PLANTS</h1>
                             <p>
-                                The plants team does the research to figure out how to optimize a hydroponic setup to grow the best possble crops.
-                                This involves investigating various conditions to see their effects on plant quality and growth speed when using hydroponics, 
-                                and experimenting with plants that aren't typically grown in a hydroponic system (e.g. tomatoes).
+                                The Plants sub-team is dedicated to ensuring the successful growth and harvest of staple crops. The team works at the intersection of various disciplines, blending engineering principles with techniques from chemistry, applied/plant biology, and food, nutrition, and health. Its focus includes designing innovative methods for crop cultivation and optimizing growth conditions through experimentation and data collection. Members of the Plants sub-team are actively involved in research, utilizing analytical techniques, and contributing to all aspects of the team’s efforts.
                             </p>
                         </div>
                         <Image 
-                            src={temp}
+                            src={plantsIMG}
                             alt='Plants Team'
                         />
                     </div>
 
                     <div className={styles.structure} id="structure">
                         <Image 
-                            src={temp}
+                            src={structureIMG}
                             alt='Structure Team'
                         />
                         <div>
                             <h1>STRUCTURE</h1>
                             <p> 
-                                Without the structure team, our plants wouldn't have a home. 
-                                Structure builds the hyrdroponic setup itself, as well as the trailer its stored in.
-                                This includes woodworking, insulation, heating, the electrical power system, water systems. 
-                                For the future we currently plan to implement solar panels to power the setup and creating a rain-catch system to get water.
+                                The Structure sub-team integrates the needs of the Automation and Plants sub-teams to create optimal environments for crop growth. Currently, the team is renovating an old 16-foot trailer by adding insulation, heating, electrical systems, a rainwater collection system, and structural reinforcement to support a controlled environment for hydroponic systems. The work is diverse and evolves with the project’s needs, presenting new and unexpected challenges. This hands-on team addresses multi-scale problems through collaborative and innovative solutions.
                             </p>
                         </div>
                     </div>
