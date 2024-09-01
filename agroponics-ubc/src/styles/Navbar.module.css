@@ -1,4 +1,4 @@
-.nav {
+.nav, .active {
     width: 100vw;
     padding: 30px 0;
     margin: 0;
@@ -7,24 +7,18 @@
     flex-direction: row;
     justify-content: center;
     position: fixed;
-    z-index: 10;
-    /*background-color: rgb(0, 0, 0, 0.7); /*make transparent if background not white*/
+    z-index: 2;
+}
+
+.nav {
     color: #228B22;
     transition: ease-in 0.2s;
 }
 
 .active {
-    width: 100vw;
-    padding: 30px 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: whitesmoke;
     position: fixed;
-    z-index: 10;
     transition: ease-in 0.2s;
 }
 
@@ -42,6 +36,11 @@
     left: 15px; 
     cursor: pointer;
     color: #228B22;
+}
+
+.navIcon>img{
+    height: 150%;
+    width: auto;
 }
 
 .linksContainer {
@@ -104,13 +103,17 @@
 /* FOR SMALL SCREEN */
 @media only screen and (max-width: 800px)  {  
     .nav, .active {
-        height: 30px;
+        height: 40px;
         width: 100vw;
     }
 
     .navIcon > img {
         height: 80%;
         width: auto;
+    }
+
+    .navIcon>h2 {
+        font-size:2rem;
     }
 
     .navButton {

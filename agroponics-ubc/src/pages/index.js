@@ -91,7 +91,7 @@ export default function Home() {
             <p>
               Join us in revolutionizing sustainable agriculture by sponsoring Agroponics UBC, where your support will help students innovate in hydroponic technology.
             </p>      
-            <button onClick={() => router.push("/sponsor")} className={styles.sectionButton}>
+            <button onClick={() => router.push("/error")} className={styles.sectionButton}>
               Sponsor Our Team
             </button>
           </div> 
