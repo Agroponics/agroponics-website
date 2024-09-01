@@ -20,6 +20,18 @@
     text-align: center;
 }
 
+.blurb {
+    text-align: center;
+    font: 2rem;
+    color: #444;
+    margin: 5% 0;
+    width: 100vw;
+}
+.blurb>p {
+    width: 40%;
+    margin: auto;
+}
+
 .subteams {
     width: 100%;
     background-color: whitesmoke;

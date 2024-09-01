@@ -59,3 +59,23 @@
     color: rgb(150, 150, 150);
     font-size: 0.7rem;
 }
+
+@media only screen and (max-width: 600px) {
+    .footer, .copyright {
+        width: 100vw;
+    }
+    .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+    .footer>div {
+        width: 80%;
+        text-align: center;
+        margin: auto 0;
+    }
+    .footer > div > span {
+        margin: auto;
+        padding-bottom: 5px;
+    }
+}

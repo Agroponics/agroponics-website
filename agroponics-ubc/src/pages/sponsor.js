@@ -23,7 +23,7 @@ export default function Sponsor() {
                     <p>Send us an email if you are interested in supporting our team.</p>
                     <form  action="/api/form" method="post">
                         <input type="text" minLength={6}  required id="email" name="email" placeholder="Email"/>
-                        <button type="submit" id="submit"><a href="mailto:ubcagroponics@gmail.com">Submit</a></button>
+                        <button type="submit" id="submit" onClick={() => router.push('/error')}>Submit</button>
                     </form>
                 </div>
                 <div className={styles.text}>

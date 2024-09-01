@@ -29,14 +29,11 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1'/>
         <link rel="icon" href="https://ubcagroponics.com/favicon.ico"/>
       </Head>
-      <Navbar />
+      <Navbar/>
       <main className={styles.main}>
         <section className={styles.landing}>
           <div>
-            <Image 
-                  src={Logo}
-                  alt='Our logo'
-            />
+            <span className={styles.landingTitle}>Hi! Welcome to UBC Agroponics.</span>
             <div>
               <h1>Sustainable Innovation for a Hungry World</h1>
               <a href='https://forms.gle/1xvmDm1rFjiyZ1GU9'>
@@ -58,7 +55,6 @@ export default function Home() {
             <Image 
               src={OurTeam}
               alt='Some of our teammates'
-              className={styles.homepageIMG}
             />
             <span>Some of our teammates</span>
           </div>            
@@ -69,7 +65,6 @@ export default function Home() {
               <Image 
                 src={trailerBack}
                 alt='Back of trailer'
-                className={styles.homepageIMG}
               />
               <span>The back of our trailer under construction</span>
           </div>
@@ -83,6 +78,11 @@ export default function Home() {
               Learn More
             </button>
           </div>
+        </section>
+
+        <section className={styles.agrobot}>
+          <h1>We are a part of AgroBot!</h1>
+          <button className={styles.sectionButton}><a href='https://ubcagrobot.com/' target='_blank'>Check out our sister team!</a></button>
         </section>
 
         <section className={styles.sponsorUs}>

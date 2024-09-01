@@ -33,7 +33,7 @@
 }
 
 .navIcon {
-    height: 100%;
+    height: 30px;
     width: fit-content;
     display: flex;
     justify-content: center;
@@ -87,22 +87,25 @@
     height: 50px;
     width: 50px;
     right: 0;
+    position: absolute;
     cursor: pointer;
     margin-right: 5%;
     padding: 0;
-    position: fixed;
     justify-content: center;
     align-items: center;
     z-index: 2;
     visibility: hidden;
 }
 
+.dropdown {
+    display: none;
+}
+
 /* FOR SMALL SCREEN */
 @media only screen and (max-width: 800px)  {  
     .nav, .active {
         height: 30px;
-        overflow-x: hidden;
-        width: 100%;
+        width: 100vw;
     }
 
     .navIcon > img {

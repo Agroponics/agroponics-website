@@ -9,7 +9,7 @@ import Footer from '../components/Footer';
 import ProjectCard from "../components/projectCards";
 
 //Images
-import RaspberryPi from "../images/temp.jpg";
+import RaspberryPi from "../images/projectIMGs/raspberryPi.jpg";
 import ESP32 from "../images/temp.jpg";
 import paint from "../images/projectIMGs/painting.jpg";
 import radishes from "../images/projectIMGs/radishes.jpg";
@@ -39,23 +39,30 @@ export default function Projects() {
                         <h4>See what each of our subteams are doing</h4>
                     </div>
                 </div>
+                
+                <div className={styles.blurb}>
+                    <p>
+                        Here are a few of the projects we're working on. We're constantly working on new things and will be adding more projects so feel free to come back later :)
+                    </p>
+                </div>
+
                 <section className={styles.subteams}>
                     <div className={styles.automation}>
-                        <h2>Automation</h2>
+                        <h2>AUTOMATION</h2>
                         <div>
                             <ProjectCard text="Raspberry Pi Network Setup" img={RaspberryPi}/>
                             <ProjectCard text="ESP32 Sensor Integration" img={ESP32}/>
                         </div>                        
                     </div>
                     <div className={styles.plants}>
-                        <h2>Plants</h2>
+                        <h2>PLANTS</h2>
                         <div>
                             <ProjectCard text="Radishes" img={radishes}/>
                             
                         </div>
                     </div>
                     <div className={styles.structure}>
-                        <h2>Structure</h2>
+                        <h2>STRUCTURE</h2>
                         <div>
                             <ProjectCard text="Painting The Trailer" img={paint}/>
                             <ProjectCard text="Insulation" img={insulation}/>

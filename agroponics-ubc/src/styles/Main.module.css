@@ -6,10 +6,23 @@
 
 .main {
   flex: 1;
+  overflow: visible;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.landingTitle {
+  font-size: 4rem;
+  color: #228B22;
+  text-align: center;
+}
+
+.agrobot {
+  text-align: center;
+  color: #228B22;
+  font-size: 2rem;
 }
 
 /* buttons in sectons */
@@ -27,7 +40,7 @@
 
 .sectionButton:hover {
   color: #228B22;
-  background-color: white;
+  background-color: transparent;
   border-color: #228B22;
 }
 
@@ -87,14 +100,6 @@
   height: 100%;
 }
 
-.homepageIMG {
-  width: 40vw;
-  height: 20vh;
-  object-fit: cover;
-  vertical-align: center;
-  justify-content: center;
-}
-
 .main > div {
   width: 100%;
 }
@@ -142,6 +147,10 @@
 
 .infoIMG>img {
   height: 50vh;
+  width: 40vw;
+  object-fit: cover;
+  vertical-align: center;
+  justify-content: center;
 }
 
 .infoIMG>span{
@@ -169,8 +178,8 @@
 /* MOBILE */
 @media only screen and (max-width: 600px) {
   /* LANDING*/
-  .landing>div {
-
+  .landingTitle {
+    font-size: 3rem;
   }
   .landing>div>div>h1 {
     text-align: center;
@@ -185,5 +194,25 @@
     justify-content: center;
     align-items: center;
     padding: 0;
+  }
+
+  .infoText, .infoIMG {
+    width: 80%;
+    margin: none;
+  }
+  .infoIMG>img {
+    width: 100%;
+  }
+
+  .infoText > button {
+    width: 50vw;
+  }
+  
+  .infoText > p {
+    font-size: medium;
+  }
+  
+  .sponsorUs>div>p{
+    width: 80%;
   }
 }

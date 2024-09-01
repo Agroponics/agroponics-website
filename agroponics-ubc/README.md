@@ -1,3 +1,12 @@
+Image credits
+
+Photo by <a href="https://unsplash.com/@harrisonbroadbent?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Harrison Broadbent</a> on <a href="https://unsplash.com/photos/green-circuit-board-hSHNPyND_dU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

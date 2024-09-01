@@ -16,7 +16,7 @@ export default function Error() {
             <main>
                 <div className={styles.closed} id="closed">
                     <div>
-                        <span>Sorry, this page is currently unavailable.</span>
+                        <span>Sorry, this page is currently unavailable as we're still updating our site. Come back later!</span>
                         <button onClick={() => router.push('/')}>&lt; Return to Home</button>
                     </div>
                 </div>

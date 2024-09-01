@@ -73,6 +73,13 @@ function Navbar() {
             </span>
             <span onClick={() => router.push('/about')}>
               About
+              <div className={styles.dropdown}>
+                <ul>
+                  <li>Automation</li>
+                  <li>Plants</li>
+                  <li>Structure</li>
+                </ul>
+              </div>
             </span>
             <span onClick={() => router.push('/projects')}>
               Projects
