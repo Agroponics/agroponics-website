@@ -4,9 +4,9 @@ import styles from '../styles/Projects.module.css';
 import { useState } from 'react';
 
 //Components
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import ProjectCard from "../components/projectCards";
+import Navbar from '../components/Navbar.js';
+import Footer from '../components/Footer.js';
+import ProjectCard from "../components/ProjectCard.js"
 
 //Images
 import RaspberryPi from "../images/projectIMGs/raspberryPi.jpg";
@@ -26,7 +26,7 @@ export default function Projects() {
     return(
         <>
             <Head>
-                <title>AgroPonics UBC || Projects</title>
+                <title>Agroponics UBC || Projects</title>
                 <meta charSet='utf-8'/>
                 <meta name='viewport' content='width=device-width, initial-scale=1'/>
                 <link rel="icon" href="https://ubcagroponics.com/favicon.ico"/>
