@@ -11,7 +11,7 @@
 }
 
 .nav {
-    color: #228B22;
+    color: white;
     transition: ease-in 0.2s;
 }
 
@@ -20,6 +20,10 @@
     background-color: whitesmoke;
     position: fixed;
     transition: ease-in 0.2s;
+}
+
+.active .navIcon {
+    color: #228B22;
 }
 
 .h2 {
@@ -35,7 +39,7 @@
     position: absolute;
     left: 15px; 
     cursor: pointer;
-    color: #228B22;
+    color: white;
     gap: 5px;
 }
 

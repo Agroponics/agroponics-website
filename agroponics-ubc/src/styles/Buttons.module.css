@@ -1,10 +1,26 @@
-/*
-    CREDITS:
-    While we made our own changes, some of these were NOT made by us. 
-    Instead they were made by the following talented people:
+.sectionButton {
+    padding: 12px 24px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.1rem;
+    background-color: #228B22;
+    border-color: transparent;
+    border-radius: 10px;
+    transition: ease-in 0.25s;
+    text-align: center;
+    border: 2px solid #228B22;
+  }
+  
+.sectionButton>a {
+    gap: 5px;
+  
+}
 
-    glow -- Kocsten https://codepen.io/kocsten
-*/
+.sectionButton:hover {
+    color: #228B22;
+    background-color: transparent;
+    border-color: #228B22;
+}
 
 .glow {
     width: 25vw;

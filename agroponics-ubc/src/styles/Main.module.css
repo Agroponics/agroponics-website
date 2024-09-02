@@ -15,22 +15,8 @@
 
 .landingTitle {
   font-size: 4rem;
-  color: #228B22;
-  text-align: center;
-}
-
-/* buttons in sectons */
-.sectionButton {
-  padding: 12px 24px;
-  cursor: pointer;
   color: white;
-  font-size: 1.1rem;
-  background-color: #228B22;
-  border-color: transparent;
-  border-radius: 10px;
-  transition: ease-in 0.25s;
   text-align: center;
-  border: 2px solid #228B22;
 }
 
 .opensLink {
@@ -45,6 +31,7 @@
 /* LANDING SECTION */
 .landing {
   background-image: url("../images/trailer.PNG");
+  font-family: Comfortaa;
   background-position: center;
   background-size: cover;
   background-repeat: none;
@@ -53,6 +40,7 @@
   display: flex;
   flex-direction: column;
   background-color: #DADADD;
+  color: white;
 }
 
 .landing>div {
@@ -83,28 +71,57 @@
   width: 50vw;
   height: fit-content;
   justify-content: center;
-  color: #228B22;
+  color: white;
 }
 
 .landing>div>div>a {
   margin: 0 auto;
 }
 
-.sectionButton:hover {
-  color: #228B22;
-  background-color: transparent;
-  border-color: #228B22;
-}
-
 .agrobot {
   text-align: center;
-  color: #228B22;
-  font-size: 2rem;
+  color: white;
+  font-size: 1rem;
+  background: linear-gradient(
+      rgba(0,0,0,0.7),
+      rgba(0,0,0,0.7)
+    ), url('../images/trailer_behind.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #DADADD;
+    margin: 10vh;
+    justify-content: center;
+}
+
+/* buttons in sectons */
+.sectionButton {
+  padding: 12px 24px;
+  cursor: pointer;
+  color: white;
+  font-size: 1.1rem;
+  background-color: #228B22;
+  border-color: transparent;
+  border-radius: 10px;
+  transition: ease-in 0.25s;
+  text-align: center;
+  border: 2px solid #228B22;
+  font-family: Raleway;
 }
 
 .sectionButton>a {
   gap: 5px;
+}
 
+.sectionButton:hover {
+  color: #228B22;
+  background-color: transparent;
+  border-color: #228B22;
 }
 
 .main>div {
@@ -114,6 +131,7 @@
 /* ABOUT and PLAN SECTIONS */
 
 .info {
+  font-family: Raleway;
   width: 80vw;
   height: auto;
   display: flex;
@@ -164,22 +182,25 @@
   font-style: italic;
   color: #777;
   text-align: center;
+  display: none;
+  margin: 0 auto;
 }
 
 /* Sponsor Section*/
 .sponsorUs {
   text-align: center;
   justify-content: center;
-  padding: 10vh 0;
+  margin: 50px 0;
+  font-family: Raleway;
 }
 
-.sponsorUs>div {
-  margin: 10vh 0;
+.sponsorUs>h1 {
+  color: #228B22;
 }
 
 .sponsorUs>div>p {
   width: 60%;
-  margin: 0 auto 5% auto;
+  margin: 40px auto;
 }
 
 /* MOBILE */
@@ -206,6 +227,11 @@
     padding: 0;
   }
 
+  .currentProjects {
+    flex-direction: column-reverse;
+    margin-top: 0;
+  }
+
   .infoText,
   .infoIMG {
     width: 80%;
@@ -214,6 +240,10 @@
 
   .infoIMG>img {
     width: 100%;
+  }
+
+  .infoIMG>span{
+    display: inherit;
   }
 
   .infoText>button {

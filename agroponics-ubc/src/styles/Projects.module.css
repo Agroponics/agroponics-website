@@ -6,7 +6,8 @@
     background-position: center;
     background-size: cover;
     background-repeat: none;
-    color: #228B22;
+    color: white;
+    font-family: Comfortaa;
 }
 
 .projectLanding>div {
@@ -37,7 +38,7 @@
     width: 100vw;
 }
 .blurb>p {
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -59,10 +60,12 @@
     flex-direction: row;
     gap: 5% ;
     text-align: center;
+    justify-content: center;
     
 }
 .subteams>div>h2{
     color: #228B22;
+    text-align: center;
 }
 
 .projectCard {

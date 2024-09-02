@@ -26,6 +26,8 @@
     background-position: center;
     background-size: cover;
     background-repeat: none;
+    font-family: Comfortaa;
+    color: white;
 }
 
 .heading > div {
@@ -37,9 +39,8 @@
     justify-content: center;
 }
 
-.heading > div >span {
+.heading > div > span {
     font-size: 50pt;
-    color: #228B22;
 }
 
 /* SECTIONS */
@@ -104,27 +105,21 @@
 .subteamCards>div>div:hover {
     cursor: pointer;
     transform: scale(1.05);
+    border: 2px solid #228B22;
+    color: #228B22;
 }
 
-.subteamCards > div > div > svg { /* Temporary, replace later with icons */
+.subteamCards > div > div > svg {
     height: 60%;
     width: auto;
 }
 
+.subteamCards>div>div>svg:hover {
+    fill: #228B22;
+}
+
 .subteamCards > div > div > p {
     color: #333;
-}
-
-.auto:hover {
-    background-color: #94d7e8;
-}
-
-.plnt:hover {
-    background-color: #A1EEBD;
-}
-
-.struct:hover {
-    background-color: #F6D6D6;
 }
 
 .subteams {
@@ -140,10 +135,9 @@
     margin: 5vh 0;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    padding: 5vh 0;
-    gap: 5vw;
     align-items: center;
+    justify-content: center;
+    gap: 5vw;
 }
 
 .subteams > div > div {
@@ -162,8 +156,10 @@
 }
 
 .subteams > div > img {
-    height: 90%;
+    height: 100%;
     width: 50%;
+    object-position: 50%;
+    right: 0px;
 }
 
 
@@ -171,12 +167,17 @@
 .interested {
     justify-content: center;
     text-align: center;
-    margin-bottom: 10vh;
+    margin: 10vh 0;
+    font-family: Raleway;
 }
 
 .interested > div {
     height: 30vh;
-    margin-bottom: 50px;
+}
+
+.interested>p{
+    color: #228B22;
+    margin: 40px 0;
 }
 
 @media only screen and (max-width: 600px) {

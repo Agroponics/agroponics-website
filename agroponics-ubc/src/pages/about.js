@@ -11,9 +11,8 @@ import Footer from "../components/Footer";
 import TitleCard from "@/components/TitleCard";
 
 // Image imports
-import temp from "../images/temp.jpg";
 import automationIMG from "../images/Tube.jpg";
-import plantsIMG from "../images/radish_science.jpg";
+import plantsIMG from "../images/radishes3.jpg";
 import structureIMG from "../images/projectIMGs/structure.png";
 
 export default function About() {
@@ -39,9 +38,7 @@ export default function About() {
                     <h2 className={styles.header}>Our goals</h2>
                     <div className={styles.info}>
                         <p className={styles.desc}>
-                            Our team is currently working on turning an old trailer into an automated hydroponic arugula farm. 
-                            Ultimately we aim to completely automate the process without anyone needing to step in the trailer for weeks at a time. 
-                            Each of our different subteams address unique challenges and goals:                       
+                        Agroponics UBC aims to revolutionize sustainable agriculture by developing advanced hydroponic systems that optimize resource use, reduce environmental impact, and enhance crop production through innovative technology and interdisciplinary collaboration.                       
                         </p>
                     </div>              
                 </section>
@@ -59,7 +56,7 @@ export default function About() {
                         </div>
                         <div className={styles.struct} onClick={() => router.push('#structure')}>
                             <h2>Structure</h2>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#000000"><path d="M768-120 517-371l57-57 251 251-57 57Zm-581 0-57-57 290-290-107-107-23 23-44-44v85l-24 24-122-122 24-24h86l-48-48 131-131q17-17 37-23t44-6q24 0 44 8.5t37 25.5L348-699l48 48-24 24 104 104 122-122q-8-13-12.5-30t-4.5-36q0-53 38.5-91.5T711-841q15 0 25.5 3t17.5 8l-85 85 75 75 85-85q5 8 8.5 19.5T841-709q0 53-38.5 91.5T711-579q-18 0-31-2.5t-24-7.5L187-120Z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" ><path d="M768-120 517-371l57-57 251 251-57 57Zm-581 0-57-57 290-290-107-107-23 23-44-44v85l-24 24-122-122 24-24h86l-48-48 131-131q17-17 37-23t44-6q24 0 44 8.5t37 25.5L348-699l48 48-24 24 104 104 122-122q-8-13-12.5-30t-4.5-36q0-53 38.5-91.5T711-841q15 0 25.5 3t17.5 8l-85 85 75 75 85-85q5 8 8.5 19.5T841-709q0 53-38.5 91.5T711-579q-18 0-31-2.5t-24-7.5L187-120Z"/></svg>
                         </div>
                     </div>
                 </section>
@@ -73,7 +70,7 @@ export default function About() {
                         <div>
                             <h1>AUTOMATION</h1>
                             <p>
-                                The automation sub-team is an Internet of Things (IoT) project that focuses on designing and implementing autonomous farming, real-time monitoring, auto-regulated environments, and remote updates for hydroponic systems. The team’s goal is to use resources in agriculture (land, water, fertilizers, manpower) more efficiently to help improve our environment. Modern irrigation practices are exacerbating water scarcity, drying up entire water systems, and causing extensive land clearance for agriculture. To address these challenges, we leverage a wide variety of technologies to collect and communicate data from hydroponic systems, enabling us to simulate and optimize different preferred growing environments.
+                                The automation subteam is an Internet of Things (IoT) project that focuses on designing and implementing autonomous farming, real time monitoring, an auto-regulated environment, and remote updates for hydroponic systems. Our goal is to more efficiently use resources in agriculture (land, water, fertilizers, manpower) to help better improve our environment. Currently modern irrigation is exacerbating water scarcity and has dried up entire water systems. Land is also being cleared massively for agriculture. We use a large variety of technologies to collect and communicate data from hydroponic systems to better learn how to simulate different preferred growing environments.
                             </p>
                         </div>
                     </div>
@@ -82,7 +79,7 @@ export default function About() {
                         <div>
                             <h1>PLANTS</h1>
                             <p>
-                                The Plants sub-team is dedicated to ensuring the successful growth and harvest of staple crops. The team works at the intersection of various disciplines, blending engineering principles with techniques from chemistry, applied/plant biology, and food, nutrition, and health. Its focus includes designing innovative methods for crop cultivation and optimizing growth conditions through experimentation and data collection. Members of the Plants sub-team are actively involved in research, utilizing analytical techniques, and contributing to all aspects of the team’s efforts.
+                                The Plants subteam straddles the intersection of multiple disciplines, and not only from within Applied Science! We follow engineering principles and methods, but borrow a lot of techniques and approaches more typically found in chemistry, applied/plant biology, and food, nutrition, & health. Our sub-team’s primary goal is to ensure the successful growth and harvest of staple crops. Our secondary goals are to design new and innovative ways of growing these crops, and then optimize the growth conditions and designs through experimentation and data collection. Members in the Plants subteam participate heavily in research, frequently use analytical techniques, and are involved in every part of the team.
                             </p>
                         </div>
                         <Image 
@@ -99,7 +96,7 @@ export default function About() {
                         <div>
                             <h1>STRUCTURE</h1>
                             <p> 
-                                The Structure sub-team integrates the needs of the Automation and Plants sub-teams to create optimal environments for crop growth. Currently, the team is renovating an old 16-foot trailer by adding insulation, heating, electrical systems, a rainwater collection system, and structural reinforcement to support a controlled environment for hydroponic systems. The work is diverse and evolves with the project’s needs, presenting new and unexpected challenges. This hands-on team addresses multi-scale problems through collaborative and innovative solutions.
+                                The Structure subteam combines the needs from the automation and plants subteams to  create spaces where our crops grow and the environment that surrounds them! Our current task is renovating an old 16-foot trailer adding insulation, heating, electrical, a rainwater collection system, and structural reinforcement to support a controlled environment for hydroponic systems. The work is quite varied, and we take on new and unexpected challenges as the needs of our team change. We are a very hands-on team that works hard to solve multi-scale problems collaboratively and innovatively.
                             </p>
                         </div>
                     </div>
@@ -109,8 +106,9 @@ export default function About() {
                     <TitleCard 
                         text="Interested?"
                     />
+                    <p>We would love to hear about your interest in Agroponics. Come join our team!</p>
                     <a href='https://forms.gle/1xvmDm1rFjiyZ1GU9'>
-                        <button className={ButtonStyles.glow}>Apply here!</button>
+                        <button className={ButtonStyles.sectionButton}>Apply here!</button>
                     </a>
                 </div>
             </main>

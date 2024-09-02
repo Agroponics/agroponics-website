@@ -6,7 +6,6 @@ import { useRouter } from 'next/router';
 //Components
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import TitleCard from '@/components/TitleCard';
 
 // Images
 import OurTeam from "../images/team/1.PNG";
@@ -31,7 +30,7 @@ export default function Home() {
       <main className={styles.main}>
         <section className={styles.landing}>
           <div>
-            <span className={styles.landingTitle}>Hi! Welcome to UBC Agroponics.</span>
+            <span className={styles.landingTitle}>Hi, Welcome to UBC Agroponics</span>
             <div>
               <h1>Sustainable Innovation for a Hungry World</h1>
               <a href='https://forms.gle/1xvmDm1rFjiyZ1GU9'>
@@ -55,7 +54,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={styles.info}>
+        <section className={[styles.info, styles.currentProjects].join(" ")}>
           <div className={styles.infoIMG}>
             <Image src={trailerBack} alt='Back of trailer'/>
             <span>The back of our trailer under construction</span>
@@ -72,16 +71,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={styles.agrobot}>
-          <h1>We are a part of AgroBot!</h1>
-          <a href='https://ubcagrobot.com/' target='_blank' className={[styles.sectionButton, styles.opensLink].join(" ")}>
-            Check out our sister team!
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#f5f5f5"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" /></svg>
-          </a>
-        </section>
-
         <section className={styles.sponsorUs}>
-          <TitleCard text="SPONSOR US" />
+          <h1>Sponsor Us</h1>
           <div>
             <p>
               Join us in revolutionizing sustainable agriculture by sponsoring Agroponics UBC, where your support will help students innovate in hydroponic technology.
@@ -90,6 +81,14 @@ export default function Home() {
               Sponsor Our Team
             </button>
           </div>
+        </section>
+
+        <section className={styles.agrobot}>
+          <h1>We are a part of AgroBot!</h1>
+          <a href='https://ubcagrobot.com/' target='_blank' className={[styles.sectionButton, styles.opensLink].join(" ")}>
+            Check out our sister team!
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#f5f5f5"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" /></svg>
+          </a>
         </section>
       </main>
       <Footer />
