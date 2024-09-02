@@ -1,13 +1,10 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import styles from '../styles/Projects.module.css';
-import { useState } from 'react';
 
 //Components
 import Navbar from '../components/Navbar.js';
 import Footer from '../components/Footer.js';
 import ProjectCard from "../components/ProjectCard.js"
-import InfoWindow from "@/components/InfoWindow";
 
 //Images
 import RaspberryPi from "../images/projectIMGs/raspberryPi.jpg";
@@ -17,12 +14,7 @@ import radishes from "../images/projectIMGs/radishes.jpg";
 import insulation from "../images/projectIMGs/insulation.jpg";
 
 export default function Projects() {
-    const [showInfo,toggleInfoContainer] = useState(false);
 
-    const toggleInfo = () => {
-
-    }
-    
     return(
         <>
             <Head>
@@ -36,7 +28,7 @@ export default function Projects() {
                 <div className={styles.projectLanding}>
                     <div>
                         <h1>Check Out Our Projects</h1>
-                        <h4>See what each of our subteams are doing</h4>
+                        <h2>See what each of our subteams are doing</h2>
                     </div>
                 </div>
                 
@@ -69,9 +61,6 @@ export default function Projects() {
                         </div>
                     </div>
                 </section>
-                <div className={styles.cardInfo} id='info'>
-
-                </div>
             </main>
             <Footer/>
         </>

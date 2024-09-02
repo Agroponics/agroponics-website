@@ -20,6 +20,15 @@
     text-align: center;
 }
 
+.projectLanding>div>h1 {
+    font-size: 50pt;
+    font-weight: normal;
+}
+
+.projectLanding>div>h2 {
+    font-weight: 600;
+}
+
 .blurb {
     text-align: center;
     font: 2rem;
@@ -78,7 +87,16 @@
     height: 20vh;
 }
 
-.cardInfo {
+/* POP-UP WINDOW */
+
+.blockBackground {
+    position: fixed;
+    background-color: rgb(0,0,0,0.7);
+    width: 100vw;
+    height: 100vh;
+}
+
+.infoWindow {
     position: fixed;
     width: 100vw;
     height: 100vh;

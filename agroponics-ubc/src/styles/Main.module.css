@@ -19,12 +19,6 @@
   text-align: center;
 }
 
-.agrobot {
-  text-align: center;
-  color: #228B22;
-  font-size: 2rem;
-}
-
 /* buttons in sectons */
 .sectionButton {
   padding: 12px 24px;
@@ -36,12 +30,16 @@
   border-radius: 10px;
   transition: ease-in 0.25s;
   text-align: center;
+  border: 2px solid #228B22;
 }
 
-.sectionButton:hover {
-  color: #228B22;
-  background-color: transparent;
-  border-color: #228B22;
+.opensLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+  gap: 5px;
 }
 
 /* LANDING SECTION */
@@ -57,20 +55,20 @@
   background-color: #DADADD;
 }
 
-.landing > div {
+.landing>div {
   padding-top: 99px;
   background-color: rgb(0, 0, 0, 0.7);
   height: 100%;
   width: 100%;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   flex-wrap: nowrap;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   vertical-align: center;
 }
 
-.landing > div > img {
+.landing>div>img {
   width: 15vw;
   height: fit-content;
   align-items: center;
@@ -78,7 +76,7 @@
   vertical-align: center;
 }
 
-.landing > div > div {
+.landing>div>div {
   display: grid;
   grid-column: 1;
   grid-gap: 5vh;
@@ -88,19 +86,28 @@
   color: #228B22;
 }
 
-.landing>div>div>a{
+.landing>div>div>a {
   margin: 0 auto;
 }
 
-
-
-.landinglogo {
-  background-image: url(../images/logo.png);
-  width: 50%; 
-  height: 100%;
+.sectionButton:hover {
+  color: #228B22;
+  background-color: transparent;
+  border-color: #228B22;
 }
 
-.main > div {
+.agrobot {
+  text-align: center;
+  color: #228B22;
+  font-size: 2rem;
+}
+
+.sectionButton>a {
+  gap: 5px;
+
+}
+
+.main>div {
   width: 100%;
 }
 
@@ -128,12 +135,12 @@
   justify-content: center;
 }
 
-.infoText > button {
+.infoText>button {
   width: 20vw;
   margin: 0 auto;
 }
 
-.infoText > p {
+.infoText>p {
   line-height: 1.75;
 }
 
@@ -153,7 +160,7 @@
   justify-content: center;
 }
 
-.infoIMG>span{
+.infoIMG>span {
   font-style: italic;
   color: #777;
   text-align: center;
@@ -166,7 +173,7 @@
   padding: 10vh;
 }
 
-.sponsorUs > div {
+.sponsorUs>div {
   margin: 10vh 0;
 }
 
@@ -177,10 +184,13 @@
 
 /* MOBILE */
 @media only screen and (max-width: 600px) {
+
   /* LANDING*/
   .landingTitle {
     font-size: 3rem;
+
   }
+
   .landing>div>div>h1 {
     text-align: center;
     width: 80vw;
@@ -196,28 +206,30 @@
     padding: 0;
   }
 
-  .infoText, .infoIMG {
+  .infoText,
+  .infoIMG {
     width: 80%;
     margin: none;
   }
+
   .infoIMG>img {
     width: 100%;
   }
 
-  .infoText > button {
+  .infoText>button {
     width: 50vw;
   }
 
-  .infoText>h1{
+  .infoText>h1 {
     width: 100%;
     text-align: center;
   }
-  
-  .infoText > p {
+
+  .infoText>p {
     font-size: medium;
   }
-  
-  .sponsorUs>div>p{
+
+  .sponsorUs>div>p {
     width: 80%;
   }
 }
