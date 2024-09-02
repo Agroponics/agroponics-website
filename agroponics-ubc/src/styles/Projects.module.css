@@ -1,5 +1,5 @@
 .projectLanding {
-    height: 90vh;
+    height: 70vh;
     width: 100%;
     background-image: url("../images/trailer_behind.jpg");
     background-attachment: fixed;
@@ -33,12 +33,12 @@
     text-align: center;
     font: 2rem;
     color: #444;
-    margin: 5% 0;
+    margin: 10vh 0;
     width: 100vw;
 }
 .blurb>p {
     width: 40%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .subteams {
@@ -88,11 +88,6 @@
     border-radius: 10px;
 }
 
-/*
-.automation>div>div:hover{background-color: #94d7e8;}
-.plants>div>div:hover{background-color: #A1EEBD;}
-.structure>div>div:hover{background-color: #F6D6D6;}
-
 /* POP-UP WINDOW */
 
 .hide {
@@ -116,36 +111,43 @@
 .infoWindow {
     position: fixed;
     top: 20px;
-    left: 10%;
-    overflow-y: visible; 
+    left: 10%; 
     width: 80vw;
-    height: min-content;
+    height: 80vh;
+    border-radius: 20px;
     z-index: 4;
     background-color:whitesmoke;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding: 5% 0;
 }
 
 .infoWindow>div{
     position: sticky;
-    overflow-y: visible;
+    overflow-y: scroll;
     height: min-content;
 }
 
 .infoWindow>button {
+    position: absolute;
+    top: 10px;
+    left:10px;
     height: 50px;
     width: 50px;
+    z-index: 5;
     color: #228B22;
-    background-color: whitesmoke;
+    background-color: transparent;
     text-decoration: none;
     border: none;
-    margin: 5px;
+
     transition: 0.2s ease-in;
 }
 
 .infoWindow>button:hover{
     transform: scale(1.2);
+    cursor: pointer;
+    opacity: 0.7;
 }
 
 .information {
@@ -168,9 +170,18 @@
 }
 
 @media only screen and (max-width: 600px) {
+    
+    .projectLanding>div>h1 {
+        font-size: 40pt
+    }
+    
+    .projectLanding>div>h2 {
+        font-size: 15pt;
+    }
+
     .blurb {
         width: 90%;
-        margin: 20vh auto;
+        margin: 10vh auto;
     }
     .blurb>p{
         width: 100%;
@@ -188,6 +199,13 @@
     
     .projectCard {
         width: 30%;
+    }
+
+    .infoWindow {
+        left: 5vw;
+        top: 5vh;
+        width: 90vw;
+        height: 90;
     }
 
     .information>img{

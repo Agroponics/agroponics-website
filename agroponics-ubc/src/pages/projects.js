@@ -35,7 +35,7 @@ export default function Projects() {
                 
                 <div className={styles.blurb}>
                     <p>
-                        Here are a few of the projects we're currently working on. We're constantly working on new things and will be adding more projects so feel free to come back later :)
+                        These are just a few of the projects we're currently working on. We're constantly working on new things and will be adding more projects so feel free to come back later :)
                     </p>
                 </div>
 
