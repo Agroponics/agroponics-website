@@ -111,12 +111,6 @@
   width: 100%;
 }
 
-.sectionTitle {
-  color: #228B22;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
 /* ABOUT and PLAN SECTIONS */
 
 .info {
@@ -135,9 +129,15 @@
   justify-content: center;
 }
 
+.infoText>h1 {
+  color: #228B22;
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: min-content;
+}
+
 .infoText>button {
   width: 20vw;
-  margin: 0 auto;
 }
 
 .infoText>p {
@@ -218,6 +218,7 @@
 
   .infoText>button {
     width: 50vw;
+    margin: 0 auto;
   }
 
   .infoText>h1 {

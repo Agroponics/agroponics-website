@@ -6,13 +6,10 @@ import Image from 'next/image';
 
 function Navbar() {
   const router = useRouter();
-  var linksHidden = true;
   const [userScrolled,setNavbar] = useState(false);
   const [menuActive,toggleNavMenu] = useState(false);
 
-  /*
-  * This will look at the distance the user has scrolled to determing the 
-  */
+  // This will look at the distance the user has scrolled to determing the 
   const changeNavBackground = () => {    
     if (window.scrollY >= 1) {
       setNavbar(true);
@@ -22,16 +19,8 @@ function Navbar() {
     }
   }
 
-  const toggleLinks = () => {
-    if (linksHidden) {
-      toggleNavMenu(true);
-    }
-    else {
-      toggleNavMenu(false);
-    }
-
-    linksHidden = !linksHidden;
-  }
+  const openLinks = () => toggleNavMenu(true);
+  const closeLinks = () => toggleNavMenu(false);
 
   const flashTitle = () => {
     let delay = 800;    
@@ -67,7 +56,7 @@ function Navbar() {
           />
           <h2>UBC Agroponics</h2>
         </a>
-        <div className={menuActive ? (styles.mobileMenu) : styles.linksContainer} onClick={menuActive ? (toggleLinks) : null}>
+        <div className={menuActive ? (styles.mobileMenu) : styles.linksContainer} onClick={menuActive ? (closeLinks) : null}>
             <span onClick={() => router.push('/')}>
               Home
             </span>
@@ -94,7 +83,7 @@ function Navbar() {
               <a href='https://forms.gle/1xvmDm1rFjiyZ1GU9'>Join The Team</a>
             </button>
         </div>
-        <div className={styles.navButton} onClick={toggleLinks}>
+        <div className={styles.navButton} onClick={menuActive ? (closeLinks) : openLinks}>
           <svg id='menu' xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#228b22">
             {
               menuActive ? (<path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>) :
@@ -103,7 +92,7 @@ function Navbar() {
           </svg>
         </div>
       </nav>
-      {menuActive ? (<div className={styles.coverBackground} onClick={toggleLinks}/>) : null}
+      {menuActive ? (<div className={styles.coverBackground} onClick={closeLinks}/>) : null}
     </> 
   );
 }

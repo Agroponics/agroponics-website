@@ -25,7 +25,7 @@ export default function Home() {
         />
         <meta charSet='utf-8' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel="icon" href="https://ubcagroponics.com/favicon.ico" />
+        <link rel="icon" href="https://ubcagroponics.com/favicon.ico"/>
       </Head>
       <Navbar />
       <main className={styles.main}>
@@ -43,31 +43,25 @@ export default function Home() {
 
         <section className={styles.info}>
           <div className={styles.infoText}>
-            <h1 className={styles.sectionTitle}>ABOUT US</h1>
+            <h1>ABOUT US</h1>
             <p>UBC Agroponics is an engineering design team project that designs autonomous hydroponic systems through multidisciplinary collaboration. It integrates IoT for automation, structural design for optimized environments, and experimental research on plant growth. The aim is to enhance agricultural efficiency by reducing resource use and improving crop production in a controlled, sustainable setting. We have three subteams: automation, structure, and plants.</p>
             <button onClick={() => router.push("/about")} className={styles.sectionButton}>
               Learn more
             </button>
           </div>
           <div className={styles.infoIMG}>
-            <Image
-              src={OurTeam}
-              alt='Some of our teammates'
-            />
+            <Image src={OurTeam} alt='Some of our teammates'/>
             <span>Some of our teammates</span>
           </div>
         </section>
 
         <section className={styles.info}>
           <div className={styles.infoIMG}>
-            <Image
-              src={trailerBack}
-              alt='Back of trailer'
-            />
+            <Image src={trailerBack} alt='Back of trailer'/>
             <span>The back of our trailer under construction</span>
           </div>
           <div className={styles.infoText}>
-            <h1 className={styles.sectionTitle}>CURRENT PROJECTS</h1>
+            <h1>CURRENT PROJECTS</h1>
             <p>
               Each of our subteams are tackling various projects to put together our solution for sustainable agriculture. This includes a variety tasks like
               programming Raspberry Pis to collect data from numerous ESP32s, completely refurnishing the trailer to house the hydroponic system, growing various plants with Deep Water Culture hydroponics, and more.

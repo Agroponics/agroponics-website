@@ -1,37 +1,37 @@
 import { useState } from 'react';
+import { createPortal } from 'react-dom';
 import Image from 'next/image';
 import styles from '../styles/Projects.module.css';
 
 function ProjectCard(props) {
-
     const [showInfo,toggleWindow] = useState(false);
+    const openWindow = () => {toggleWindow(true)};
+    const closeWindow = () => {toggleWindow(false)};
 
-    const toggleInfo = () => {
-
+    const newWindow = () => {
     }
 
     return (
         <>
-            <div className={styles.projectCard}>
+            <div className={styles.projectCard} onClick={openWindow}>
                 <Image
                     src={props.img}
+                    alt='Project Image'
                 />
-                <h3>{props.text}</h3>
+                <h3>{props.cardTitle}</h3> 
             </div>
 
-            <div className={styles.blockBackground}>
-                <div className={styles.infoWindow}>
-                    <button oncli>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#fefefe"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-                    </button>
+            <div className={showInfo ? (styles.blockBackground) : styles.hide} onClick={closeWindow}/>
+
+            <div className={showInfo ? (styles.infoWindow) : styles.hide}>
+                <button onClick={closeWindow}>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#228B22"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </button>
+                <div>
                     <div className={styles.information}>
                         <h3>{props.title}</h3>
+                        <Image src={props.img} alt='Project Image'/>
                         <p>{props.text}</p>
-                    </div>
-                    <div className={styles.images}>
-                        <Image src={props.img0}/>
-                        <Image src={props.img1}/>
-                        <Image src={props.img2}/>
                     </div>
                 </div>
             </div>
