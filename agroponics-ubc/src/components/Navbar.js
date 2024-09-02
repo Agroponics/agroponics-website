@@ -22,8 +22,7 @@ function Navbar() {
   const openLinks = () => toggleNavMenu(true);
   const closeLinks = () => toggleNavMenu(false);
 
-  const flashTitle = () => {
-    let delay = 800;    
+  const flashTitle = () => {   
     router.push('#contact');
     setTimeout(() => {
       let x = document.getElementById("contact");
@@ -31,8 +30,8 @@ function Navbar() {
       x.style.backgroundColor = "#FDFD96";
       setTimeout(() => {
         x.style.backgroundColor = ogColor;
-      }, delay);
-    }, 1000);  
+      }, 1500);
+    }, 1  );  
   }     
 
     /*

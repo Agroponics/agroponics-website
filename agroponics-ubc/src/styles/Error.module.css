@@ -1,7 +1,7 @@
 .closed, .blockmobile {
     background-size: auto;
     width: 100vw;
-    height: 100vh;
+    height:100vh;
     color: #228B22;
     display: flex;
     justify-content: center;

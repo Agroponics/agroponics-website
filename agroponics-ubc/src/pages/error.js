@@ -3,6 +3,7 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import styles from "../styles/Error.module.css";
 import { useRouter } from 'next/router';
+import Footer from "@/components/Footer";
 
 export default function Error() {
     const router = useRouter();
@@ -21,6 +22,7 @@ export default function Error() {
                     </div>
                 </div>
             </main>
+            <Footer/>
         </>
     );
 }
