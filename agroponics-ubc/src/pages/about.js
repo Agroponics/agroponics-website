@@ -1,22 +1,26 @@
-import React from "react";
 import Head from "next/head";
-import Navbar from "../components/Navbar";
 import styles from "../styles/About.module.css";
 import ButtonStyles from "../styles/Buttons.module.css";
-import Footer from "../components/Footer";
 import { useRouter} from 'next/router';
+import { useState } from "react";
 import Image from "next/image";
+
+//Components
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import TitleCard from "@/components/TitleCard";
 
 // Image imports
 import temp from "../images/temp.jpg";
-import TitleCard from "@/components/TitleCard";
-
 import automationIMG from "../images/Tube.jpg";
 import plantsIMG from "../images/radish_science.jpg";
 import structureIMG from "../images/projectIMGs/structure.png";
 
 export default function About() {
     const router = useRouter();
+    const [moreAuto,toggleAutoContainer] = useState(false);
+    const [morePlants,togglePlantsContainer] = useState(false);
+    const [moreStruct,toggleStructContainer] = useState(false);
 
     return(
         <>
@@ -71,7 +75,6 @@ export default function About() {
                             <p>
                                 The automation sub-team is an Internet of Things (IoT) project that focuses on designing and implementing autonomous farming, real-time monitoring, auto-regulated environments, and remote updates for hydroponic systems. The team’s goal is to use resources in agriculture (land, water, fertilizers, manpower) more efficiently to help improve our environment. Modern irrigation practices are exacerbating water scarcity, drying up entire water systems, and causing extensive land clearance for agriculture. To address these challenges, we leverage a wide variety of technologies to collect and communicate data from hydroponic systems, enabling us to simulate and optimize different preferred growing environments.
                             </p>
-                            <button>Learn more</button>
                         </div>
                     </div>
                     

@@ -11,8 +11,6 @@ import TitleCard from '@/components/TitleCard';
 // Images
 import OurTeam from "../images/team/1.PNG";
 import trailerBack from "../images/trailer_behind.jpg";
-import temp from '../images/temp.jpg';
-import Logo from '../images/logo.png';
 export default function Home() {
   const router = useRouter();
 
@@ -82,7 +80,10 @@ export default function Home() {
 
         <section className={styles.agrobot}>
           <h1>We are a part of AgroBot!</h1>
-          <button className={styles.sectionButton}><a href='https://ubcagrobot.com/' target='_blank'>Check out our sister team!</a></button>
+          <button className={styles.sectionButton}><a href='https://ubcagrobot.com/' target='_blank'>Check out our sister team! 
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg>
+          
+          </a></button>
         </section>
 
         <section className={styles.sponsorUs}>

@@ -5,10 +5,10 @@ import styles from '../styles/Projects.module.css';
 function ProjectCard(props) {
     return (
         <div className={styles.projectCard}>
-            <h3>{props.text}</h3>
             <Image
                 src={props.img}
             />
+            <h3>{props.text}</h3>
         </div>
       );
 }

@@ -1,4 +1,4 @@
-.closed {
+.closed, .blockmobile {
     background-size: auto;
     width: 100vw;
     height: 100vh;
@@ -11,13 +11,20 @@
     text-decoration: solid;
     font-size: x-large;
   }
-  .closed > div {
+
+  .blockmobile {
+    display: none;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .closed>div, .blockmobile>div {
     display: flex;
     gap: 8vh;
     flex-direction: column;
   }
   
-  .closed > div > button {
+  .closed>div>button, .blockmobile>div>button {
     color: #228B22;
     border: none;
     background: none;
@@ -25,6 +32,12 @@
     font-size: medium;
   }
   
-  .closed > div > button:hover {
+  .closed>div>button:hover, .blockmobile>div>button:hover {
     color: #333333;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .blockmobile {
+      display: flex;
+    }
   }

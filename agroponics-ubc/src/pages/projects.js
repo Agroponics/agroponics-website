@@ -7,6 +7,7 @@ import { useState } from 'react';
 import Navbar from '../components/Navbar.js';
 import Footer from '../components/Footer.js';
 import ProjectCard from "../components/ProjectCard.js"
+import InfoWindow from "@/components/InfoWindow";
 
 //Images
 import RaspberryPi from "../images/projectIMGs/raspberryPi.jpg";
@@ -21,7 +22,6 @@ export default function Projects() {
     const toggleInfo = () => {
 
     }
-
     
     return(
         <>
