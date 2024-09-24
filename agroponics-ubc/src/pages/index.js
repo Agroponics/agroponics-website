@@ -33,7 +33,7 @@ export default function Home() {
             <span className={styles.landingTitle}>Hi, Welcome to UBC Agroponics</span>
             <div>
               <h1>Sustainable Innovation for a Hungry World</h1>
-              <a href='https://forms.gle/1xvmDm1rFjiyZ1GU9'>
+              <a onClick={() => router.push('/join')}>
                 <button className={styles.sectionButton}>Apply Today!</button>
               </a>
             </div>

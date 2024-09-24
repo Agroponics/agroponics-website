@@ -32,7 +32,7 @@ function Footer() {
         <div>
             <h4>Quick Links</h4>
             <span>
-              <a href='https://forms.gle/1xvmDm1rFjiyZ1GU9'>Join</a>
+              <a onClick={() => router.push('/join')}>Join</a>
             </span>
             <span onClick={() => router.push('/about')}>
               <a>About</a>

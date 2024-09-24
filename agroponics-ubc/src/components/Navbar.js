@@ -79,7 +79,7 @@ function Navbar() {
               Sponsor
             </span>
             <button className={styles.volunteerButton}>
-              <a href='https://forms.gle/1xvmDm1rFjiyZ1GU9'>Join The Team</a>
+              <a onClick={() => router.push('/join')}>Join The Team</a>
             </button>
         </div>
         <div className={styles.navButton} onClick={menuActive ? (closeLinks) : openLinks}>
