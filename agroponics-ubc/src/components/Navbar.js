@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import styles from '../styles/Navbar.module.css';
-import Logo from "../images/logo_green.png";
+import LogoWhite from "../images/logos/AgroponicsLogoLongWhite.png";
+import LogoGreen from "../images/logos/AgroponicsLogoLongGreen.png"
 import Image from 'next/image';
 
 function Navbar() {
@@ -50,10 +51,9 @@ function Navbar() {
       <nav className={userScrolled ? (styles.active) : styles.nav}>
         <a className={styles.navIcon} onClick={() => router.push('/#')}>
           <Image 
-            src={Logo}
+            src={userScrolled ? (LogoGreen) : LogoWhite}
             alt='Our logo'
           />
-          <h2>UBC Agroponics</h2>
         </a>
         <div className={menuActive ? (styles.mobileMenu) : styles.linksContainer} onClick={menuActive ? (closeLinks) : null}>
             <span onClick={() => router.push('/')}>

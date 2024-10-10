@@ -22,12 +22,8 @@
     transition: ease-in 0.2s;
 }
 
-.active .navIcon {
-    color: #228B22;
-}
-
-.h2 {
-    width: min-content;
+.active > a {
+    fill: #228B22;
 }
 
 .navIcon {
