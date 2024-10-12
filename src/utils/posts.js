@@ -1,6 +1,7 @@
 /*
-    This file follows the following page:
+    This file follows the following tutorials:
     https://nextjs.org/learn-pages-router/basics/data-fetching/blog-data
+    https://nextjs.org/learn-pages-router/basics/dynamic-routes/implement-getstaticprops
 
     fs is a Node.js module that lets you read files from the file system.
     path is a Node.js module that lets you manipulate file paths.
@@ -34,6 +35,7 @@ export function getSortedPostsData() {
       ...matterResult.data,
     };
   });
+  
   // Sort posts by date
   return allPostsData.sort((a, b) => {
     if (a.date < b.date) {
@@ -42,4 +44,29 @@ export function getSortedPostsData() {
       return -1;
     }
   });
+}
+
+export function getAllPostIds() {
+  const fileNames = fs.readdirSync(postsDirectory);
+  return fileNames.map((fileName) => {
+    return {
+      params: {
+        id: fileName.replace(/\.md$/, ''),
+      },
+    };
+  });
+}
+
+export function getPostData(id) {
+  const fullPath = path.join(postsDirectory, `${id}.md`);
+  const fileContents = fs.readFileSync(fullPath, 'utf8');
+
+  // Use gray-matter to parse the post metadata section
+  const matterResult = matter(fileContents);
+
+  // Combine the data with the id
+  return {
+    id,
+    ...matterResult.data,
+  };
 }
