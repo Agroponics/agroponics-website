@@ -3,10 +3,7 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Footer from "@/components/Footer";
 import styles from "../styles/Sponsor.module.css";
-import Logo from "../images/logo.png"
-import Image from "next/image";
 import { useRouter } from 'next/router';
-import temp from '../images/temp.jpg'
 
 export default function Sponsor() {
     const router = useRouter();
