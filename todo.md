@@ -1,11 +1,9 @@
 ## Layout
 
+Navbar
+- Drop down from About Us showing subteams
+
 Homepage
-- Landing photo 
-- - Button to join us
-- - Button to sponsor
-- Briefly explain what we do
-- - Include button to about us page
 - Sponsorships
 - - Show our sponsors
 - - Button to sponsor us
@@ -15,8 +13,8 @@ About
 - Explain how the hydroponic system
 - Show arugula growth
 
-Join us
-- Takes people to application process
+Contacts
+- Create a dedicated contacts page
 
 Sponsor Us
 - Sponsor section
@@ -27,3 +25,4 @@ Sponsor Us
 
 - Blog
 - What hydroponics setup are you? Buzzfeed-style quiz
+- LOOK INTO GSAP !!!
