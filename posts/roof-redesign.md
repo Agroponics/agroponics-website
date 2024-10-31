@@ -2,10 +2,10 @@
 title: "Roof Redesign"
 date: "06-2024"
 id: "roof-redesign"
-cover_image: "/../images/projectIMGs/structure.jpg"
+cover_image: "/../../images/projectIMGs/structure.jpg"
 subteam: "structure"
 ---
-# Enhancing the Trailer’s Efficiency with XPS Insulation
+# Redesigning the Trailer's Roof for Long-Term Sustainability
 
 ![Roof CAD](../images/projectIMGs/structure.jpg "Roof CAD")
 

@@ -2,7 +2,7 @@
 title: "Insulation"
 date: "06-2024"
 id: 'insulation'
-cover_image: "/../images/projectIMGs/insulation.jpg"
+cover_image: "/../../images/projectIMGs/insulation.jpg"
 subteam: "structure"
 ---
 # Enhancing the Trailer’s Efficiency with XPS Insulation

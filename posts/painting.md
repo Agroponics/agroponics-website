@@ -2,7 +2,7 @@
 title: "Painting The Trailer"
 date: "04-2024"
 id: "painting"
-cover_image: "/../images/projectIMGs/painting.jpg"
+cover_image: "/../../images/projectIMGs/painting.jpg"
 subteam: "structure"
 ---
 # Giving Our Trailer a Fresh New Look

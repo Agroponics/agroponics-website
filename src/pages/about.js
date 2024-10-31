@@ -4,6 +4,7 @@ import ButtonStyles from "../styles/Buttons.module.css";
 import { useRouter} from 'next/router';
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 //Components
 import Navbar from "../components/Navbar";
@@ -107,9 +108,9 @@ export default function About() {
                         text="Interested?"
                     />
                     <p>We would love to hear about your interest in Agroponics. Come join our team!</p>
-                    <a onClick={() => router.push('/join')}>
+                    <Link onClick={() => router.push('/join')}>
                         <button className={ButtonStyles.sectionButton}>Apply here!</button>
-                    </a>
+                    </Link>
                 </div>
             </main>
             <Footer />

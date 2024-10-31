@@ -2,7 +2,7 @@
 title: "Raspberry Pi Network Setup"
 date: "06-2024"
 id: "network-setup"
-cover_image: "/../images/projectIMGs/raspberryPi.jpg"
+cover_image: "/../../images/projectIMGs/raspberryPi.jpg"
 subteam: "automation"
 ---
 # Raspberry Pi Network Setup – Enhancing Connectivity and Control for Our Hydroponic Systems

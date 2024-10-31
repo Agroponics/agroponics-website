@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "@/components/Footer";
 import styles from "../styles/Sponsor.module.css";
@@ -30,21 +31,7 @@ export default function Sponsor() {
                     </p>
                 </div>
                 <div className={styles.sponsors}>
-                    <a target="_blank">
-                        <div>
 
-                        </div>
-                    </a>
-                    <a target="_blank">
-                        <div>
-
-                        </div>
-                    </a>
-                    <a target="_blank">
-                        <div>
-
-                        </div>
-                    </a>
                 </div>
             </main>
             <Footer/>
