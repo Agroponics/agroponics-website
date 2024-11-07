@@ -5,7 +5,7 @@ import LogoWhite from "../images/logos/AgroponicsLogoLongWhite.png";
 import LogoGreen from "../images/logos/AgroponicsLogoLongGreen.png"
 import Image from 'next/image';
 
-function Navbar() {
+function Navbar(props) {
   const router = useRouter();
   const [userScrolled,setNavbar] = useState(false);
   const [menuActive,toggleNavMenu] = useState(false);
@@ -48,10 +48,10 @@ function Navbar() {
 
   return (
     <>
-      <nav className={userScrolled ? (styles.active) : styles.nav}>
+      <nav className={(userScrolled || props.setActive) ? (styles.active) : styles.nav}>
         <a className={styles.navIcon} onClick={() => router.push('/#')}>
           <Image 
-            src={userScrolled ? (LogoGreen) : LogoWhite}
+            src={(userScrolled || props.setActive) ? (LogoGreen) : LogoWhite}
             alt='Our logo'
           />
         </a>

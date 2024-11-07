@@ -4,7 +4,6 @@ import Navbar from "@/components/Navbar";
 import styles from "../styles/Main.module.css";
 import closed_styles from "../styles/Error.module.css";
 import Footer from "@/components/Footer";
-import Link from 'next/link';
 
 export default function Join() {
     const router = useRouter();
@@ -22,7 +21,7 @@ export default function Join() {
                     <Image alt="Timeline of recruitment process. Applications close Sept 21."/>  
                     <div>
                         <p>Applications close on September 21st!</p>
-                        <Link>Link to application form</Link>
+                        <a>Link to application form</a>
                     </div>
                 </div>
             </main>

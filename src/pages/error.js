@@ -13,7 +13,7 @@ export default function Error() {
             <Head>
                 <title>Page Unavailable</title>
             </Head>
-            <Navbar />
+            <Navbar setActive={true}/>
             <main>
                 <div className={styles.closed} id="closed">
                     <div>
