@@ -5,9 +5,6 @@ import styles from "../styles/Main.module.css";
 import closed_styles from "../styles/Error.module.css";
 import Footer from "@/components/Footer";
 
-//Images
-
-
 export default function Join() {
     const router = useRouter();
     

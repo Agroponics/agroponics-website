@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Main.module.css';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 //Components
 import Navbar from '../components/Navbar';
@@ -85,10 +86,10 @@ export default function Home() {
 
         <section className={styles.agrobot}>
           <h1>We are a part of AgroBot!</h1>
-          <a href='https://ubcagrobot.com/' target='_blank' className={[styles.sectionButton, styles.opensLink].join(" ")}>
+          <Link href='https://ubcagrobot.com/' target='_blank' className={[styles.sectionButton, styles.opensLink].join(" ")}>
             Check out our sister team!
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#f5f5f5"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" /></svg>
-          </a>
+          </Link>
         </section>
       </main>
       <Footer />

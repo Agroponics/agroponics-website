@@ -7,6 +7,12 @@
     path is a Node.js module that lets you manipulate file paths.
     matter is a library that lets you parse the metadata in each markdown file.
     In Next.js, the lib folder does not have an assigned name like the pages folder, so you can name it anything. It's usually convention to use lib or utils.
+
+
+    LOOK INTO THESE
+    https://www.youtube.com/watch?v=n2CV6f0vFr4 
+
+
 */
 
 import fs from 'fs';
@@ -46,8 +52,22 @@ export function getSortedPostsData() {
   });
 }
 
+
 export function getAllPostIds() {
   const fileNames = fs.readdirSync(postsDirectory);
+  // Returns an array that looks like this:
+  // [
+  //   {
+  //     params: {
+  //       id: 'ssg-ssr'
+  //     }
+  //   },
+  //   {
+  //     params: {
+  //       id: 'pre-rendering'
+  //     }
+  //   }
+  // ]
   return fileNames.map((fileName) => {
     return {
       params: {
@@ -66,7 +86,18 @@ export function getPostData(id) {
 
   // Combine the data with the id
   return {
-    id,
+    //id,    //Don't need necessarily
     ...matterResult.data,
   };
+}
+
+export function getPostContent(id) {
+  const fullPath = path.join(postsDirectory, `${id}.md`);
+  const fileContents = fs.readFileSync(fullPath, 'utf8');
+
+  // Use gray-matter to parse the post metadata section
+  const matterResult = matter(fileContents);
+
+  // Return the content of the file
+  return matterResult.content;
 }
