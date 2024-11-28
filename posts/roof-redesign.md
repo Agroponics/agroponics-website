@@ -2,7 +2,7 @@
 title: "Roof Redesign"
 date: "06-2024"
 id: "roof-redesign"
-cover_image: "https://ubcagroponics.com/projectIMGs/structure.jpg"
+cover_image: "structure.jpg"
 subteam: "structure"
 header: "Redesigning the Trailer's Roof for Long-Term Sustainability"
 ---

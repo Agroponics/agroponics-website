@@ -2,7 +2,7 @@
 title: "Painting The Trailer"
 date: "04-2024"
 id: "painting"
-cover_image: "https://ubcagroponics.com/projectIMGs/painting.jpg"
+cover_image: "painting.jpg"
 subteam: "structure"
 header: "Giving Our Trailer a Fresh New Look"
 ---

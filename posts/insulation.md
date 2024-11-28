@@ -2,7 +2,7 @@
 title: "Insulation"
 date: "06-2024"
 id: 'insulation'
-cover_image: "https://ubcagroponics.com/projectIMGs/insulation.jpg"
+cover_image: "insulation.jpg"
 subteam: "structure"
 header: "Enhancing the Trailer’s Efficiency with XPS Insulation"
 ---

@@ -4,15 +4,15 @@ import styles from '../styles/Projects.module.css';
 //Components
 import Navbar from '../components/Navbar.js';
 import Footer from '../components/Footer.js';
-import ProjectCard from "../components/ProjectCard.js"
+import ProjectCard from '../components/ProjectCard.js';
 
 //Images
-import RaspberryPi from "https://ubcagroponics.com/raspberryPi.jpg"; 
-import ESP32 from "https://ubcagroponics.com/esp32.jpg";
-import paint from "https://ubcagroponics.com/painting.jpg";
-import radishes from "https://ubcagroponics.com/radishes.jpg";
-import insulation from "https://ubcagroponics.com/insulation.jpg";
-import roof from "https://ubcagroponics.com/structure.jpg";
+import RaspberryPi from '../images/projectIMGs/raspberryPi.jpg'; 
+import ESP32 from '../images/projectIMGs/esp32.jpg';
+import paint from '../images/projectIMGs/painting.jpg';
+import radishes from '../images/projectIMGs/radishes.jpg';
+import insulation from '../images/projectIMGs/insulation.jpg';
+import roof from '../images/projectIMGs/structure.png';
 
 export default function Projects() {
 

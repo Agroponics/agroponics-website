@@ -15,6 +15,8 @@ export default function Project({ postData, postContent, allPostsData }) {
     );
   });
 
+  const post_image = "../../images/projectIMGs/".concat(postData.cover_image);
+
   return (
     <ArticleLayout>
       <Navbar setActive={true}/>
@@ -23,14 +25,13 @@ export default function Project({ postData, postContent, allPostsData }) {
         <title>{postData.title} | UBC Agroponics</title>
       </Head>
       
-      
       <div className={styles.postdata}>
         <span>{postData.id}</span>
         <span>{postData.date}</span>
       </div>
 
-      <main>
-        <img src={postData.cover_image}/>        
+      <main>                
+        <img src={post_image} width={100} height={100}></img>
         <h1>{postData.header}</h1>
         <p className={styles.articleBody}>{fileBody}</p>
       </main>
@@ -42,7 +43,7 @@ export default function Project({ postData, postContent, allPostsData }) {
             <li key={id}>
               <Link href={`/projects/${id}`}>{title}</Link>
               <br/>
-              <Image src={cover_image} width={40} height={40}></Image>
+              <img src={"/../../images/projectIMGs/".concat(cover_image)} width={40} height={40}></img>
             </li>
           ))}
         </ul>
