@@ -2,13 +2,10 @@
 title: "Roof Redesign"
 date: "06-2024"
 id: "roof-redesign"
-cover_image: "/../../images/projectIMGs/structure.jpg"
+cover_image: "https://ubcagroponics.com/projectIMGs/structure.jpg"
 subteam: "structure"
+header: "Redesigning the Trailer's Roof for Long-Term Sustainability"
 ---
-# Redesigning the Trailer's Roof for Long-Term Sustainability
-
-![Roof CAD](../images/projectIMGs/structure.jpg "Roof CAD")
-
 At Agroponics UBC, we’re not just growing plants; we’re cultivating innovative solutions. As part of our ongoing efforts to optimize the trailer housing our hydroponic systems, we’ve undertaken a critical project: redesigning the trailer’s roof, which as of now is rusting and has begun to leak. 
 
 This isn’t just about keeping the rain out—it’s about ensuring long-term durability, safety, and future-proofing our setup for new technologies. In our redesign, we carefully considered various factors. 
