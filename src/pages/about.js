@@ -8,7 +8,7 @@ import Image from "next/image";
 //Components
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import TitleCard from "@/components/TitleCard";
+import TitleCard from "../components/TitleCard";
 
 // Image imports
 import automationIMG from "../images/Tube.jpg";

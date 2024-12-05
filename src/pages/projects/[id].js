@@ -1,4 +1,5 @@
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 import Head from 'next/head.js';
 import Image from 'next/image.js';
 import Link from 'next/link.js';
@@ -7,7 +8,6 @@ import { getAllPostIds, getPostData, getPostContent, getSortedPostsData } from '
 import styles from '../../styles/ProjectArticle.module.css'
 
 export default function Project({ postData, postContent, allPostsData }) {
-
   //An array of each character in the content of the post file
   const fileBody = Object.values(postContent).map((item) => {
     return(
@@ -15,39 +15,42 @@ export default function Project({ postData, postContent, allPostsData }) {
     );
   });
 
-  const post_image = "../../images/projectIMGs/".concat(postData.cover_image);
-
   return (
     <ArticleLayout>
-      <Navbar setActive={true}/>
+      <Navbar/>
       
       <Head>
         <title>{postData.title} | UBC Agroponics</title>
       </Head>
       
-      <div className={styles.postdata}>
-        <span>{postData.id}</span>
-        <span>{postData.date}</span>
-      </div>
+      <main className={styles.article}>                
+        <div className={styles.articleHeader} style={{backgroundImage: `url(${`/projectIMGs/${postData.cover_image}`})`}}>
+          <div/>
+        </div>
 
-      <main>                
-        <img src={post_image} width={100} height={100}></img>
-        <h1>{postData.header}</h1>
-        <p className={styles.articleBody}>{fileBody}</p>
+        <div className={styles.articleBody}>
+          <h1>{postData.header}</h1>
+          <span>{postData.date}</span>
+          <p>{fileBody}</p>
+        </div>
+
+        <div className={styles.otherArticles}> 
+          <h2>Check out some other projects:</h2>
+          <ul className={styles.moreArticles}>
+            {allPostsData.map(({ id, cover_image, title }) => (
+              (id != postData.id) ?
+              <li className={styles.suggestedArticle} key={id}>
+                <Link href={`/projects/${id}`}>
+                  <img src={`/projectIMGs/${cover_image}`}/>
+                  <br/>
+                  {title}
+                </Link>
+              </li> : null
+            ))}
+          </ul>
+        </div>
+        <Footer/>
       </main>
- 
-      <section> 
-        <h3>Check out our other projects:</h3>
-        <ul>
-          {allPostsData.map(({ id, cover_image, title }) => (
-            <li key={id}>
-              <Link href={`/projects/${id}`}>{title}</Link>
-              <br/>
-              <img src={"/../../images/projectIMGs/".concat(cover_image)} width={40} height={40}></img>
-            </li>
-          ))}
-        </ul>
-      </section>
     </ArticleLayout>
   );
 }
