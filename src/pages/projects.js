@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import styles from '../styles/Projects.module.css';
 
 //Components
@@ -6,10 +7,9 @@ import Navbar from '../components/Navbar.js';
 import Footer from '../components/Footer.js';
 
 // Get data for the posts
-import { getAllPostIds, getSortedPostsData } from '../utils/posts.js';
+import { getSortedPostsData } from '../utils/posts.js';
 
 export default function Projects({allPostsData}) {
-
     return(
         <>
             <Head>
@@ -36,21 +36,50 @@ export default function Projects({allPostsData}) {
                 <section className={styles.subteams}>
                     <div className={styles.automation}>
                         <h2>AUTOMATION</h2>
-                        <div>
-                            
-                        </div>                        
+                        <ul className={styles.subteamArticles}>
+                            {allPostsData.map(({ id, cover_image, title, subteam }) => (
+                            (subteam === "automation") ?
+                            <li className={styles.suggestedArticle} key={id}>
+                                <Link href={`/projects/${id}`}>
+                                    <img src={`/projectIMGs/${cover_image}`}/>
+                                    <br/>
+                                    {title}
+                                </Link>
+                            </li> : null
+                            ))}
+                        </ul>                        
                     </div>
+
                     <div className={styles.plants}>
                         <h2>PLANTS</h2>
-                        <div>
-                           
-                        </div>
+                        <ul className={styles.subteamArticles}>
+                            {allPostsData.map(({ id, cover_image, title, subteam }) => (
+                            (subteam === "plants") ?
+                            <li className={styles.suggestedArticle} key={id}>
+                                <Link href={`/projects/${id}`}>
+                                    <img src={`/projectIMGs/${cover_image}`}/>
+                                    <br/>
+                                    {title}
+                                </Link>
+                            </li> : null
+                            ))}
+                        </ul>
                     </div>
+                    
                     <div className={styles.structure}>
                         <h2>STRUCTURE</h2>
-                        <div>
-                            
-                        </div>
+                        <ul className={styles.subteamArticles}>
+                            {allPostsData.map(({ id, cover_image, title, subteam }) => (
+                            (subteam === "structure") ?
+                            <li className={styles.suggestedArticle} key={id}>
+                                <Link href={`/projects/${id}`}>
+                                    <img src={`/projectIMGs/${cover_image}`}/>
+                                    <br/>
+                                    {title}
+                                </Link>
+                            </li> : null
+                            ))}
+                        </ul>
                     </div>
                 </section>
             </main>
@@ -58,18 +87,9 @@ export default function Projects({allPostsData}) {
         </>
     );
 };
-
-export async function getStaticPaths() {
-    const paths = getAllPostIds();
-    return {
-      paths,
-      fallback: false,
-    };
-}
   
-export async function getStaticProps({ params }) {
+export async function getStaticProps() {
     const allPostsData = getSortedPostsData();
-  
     return {
         props: {
             allPostsData,
