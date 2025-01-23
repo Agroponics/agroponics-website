@@ -2,7 +2,7 @@
 title: "Radish Experiment"
 date: "06-2024"
 id: "radish-experiment"
-cover_image: "https://ubcagroponics.com/projectIMGs/radishes.jpg"
+cover_image: "radishes.jpg"
 subteam: "plants"
 header: "Exploring Tuber Growth in Hydroponics – Radish Study Underway"
 ---

@@ -2,7 +2,7 @@
 title: "Raspberry Pi Network Setup"
 date: "06-2024"
 id: "network-setup"
-cover_image: "https://ubcagroponics.com/projectIMGs/raspberryPi.jpg"
+cover_image: "raspberryPi.jpg"
 subteam: "automation"
 header: "Raspberry Pi Network Setup – Enhancing Connectivity and Control for Our Hydroponic Systems"
 ---

@@ -19,7 +19,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: whitesmoke;
     position: fixed;
-    transition: ease-in 0.2s;
+    transition: ease-in 0.1s;
 }
 
 .active > a {

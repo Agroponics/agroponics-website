@@ -2,7 +2,7 @@
 title: "ESP32 Sensor Integration"
 date: "06-2024"
 id: "esp32-integration"
-cover_image: "https://ubcagroponics.com/projectIMGs/esp32.jpg"
+cover_image: "esp32.jpg"
 subteam: 'automation'
 header: "Successful Integration of Sensors with ESP32 – A Key Step Towards a Smart Hydroponic System"
 ---

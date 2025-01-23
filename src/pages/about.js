@@ -8,12 +8,12 @@ import Image from "next/image";
 //Components
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import TitleCard from "@/components/TitleCard";
+import TitleCard from "../components/TitleCard";
 
 // Image imports
 import automationIMG from "../images/Tube.jpg";
 import plantsIMG from "../images/radishes3.jpg";
-import structureIMG from "../images/structure.png";
+import structureIMG from "../images/projectIMGs/structure.png";
 
 export default function About() {
     const router = useRouter();

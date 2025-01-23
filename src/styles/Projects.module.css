@@ -51,126 +51,47 @@
 .subteams > div {
     display: flex;
     flex-direction: column;
-    height: 40vh;
-    width: 80%;
     margin: 2% auto;
 }
-.subteams>div>div{
-    display: flex;
-    flex-direction: row;
-    gap: 5% ;
-    text-align: center;
-    justify-content: center;
-    
-}
+
 .subteams>div>h2{
     color: #228B22;
     text-align: center;
 }
 
-.projectCard {
-    width: 20%;
-    height: 100%;
-    border-radius: 10px;
-    transition: 0.2s ease-in;
-    padding: 5px;
-}
-
-.projectCard:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    cursor: pointer;
-}
-
-.projectCard>h3 {
-    color: #333;
-}
-.projectCard>img {
-    width: 100%;
-    height: 20vh;
-    border-radius: 10px;
-}
-
-/* POP-UP WINDOW */
-
-.hide {
-    display: none;
-}
-
-.blockBackground {
-    position: fixed;
-    left: 0;
-    top: 0;
-    background-color: rgb(0,0,0,0.7);
-    width: 100vw;
-    height: 100vh;
-    z-index: 3;
-    transition: 0.3s ease-in;
+/* SUBTEAM CARDS */
+.subteamArticles {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    gap: 15vw;
+    height: 30vh;
     align-items: center;
-}
-
-.infoWindow {
-    position: fixed;
-    top: 20px;
-    left: 10%; 
-    width: 80vw;
-    height: 80vh;
-    border-radius: 20px;
-    z-index: 4;
-    background-color:whitesmoke;
-    display: flex;
     justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.suggestedArticle {
+    display: flex;
     flex-direction: column;
-    padding: 5% 0;
-}
-
-.infoWindow>div{
-    position: sticky;
-    overflow-y: scroll;
-    height: min-content;
-}
-
-.infoWindow>button {
-    position: absolute;
-    top: 10px;
-    left:10px;
-    height: 50px;
-    width: 50px;
-    z-index: 5;
-    color: #228B22;
-    background-color: transparent;
     text-decoration: none;
-    border: none;
-
     transition: 0.2s ease-in;
+    width: 10vw;
+    height: 10vw;
+    text-align: center;
 }
 
-.infoWindow>button:hover{
-    transform: scale(1.2);
+.suggestedArticle :hover {
     cursor: pointer;
-    opacity: 0.7;
+    transform: scale(1.05);
 }
 
-.information {
-    width: 80%;
-    margin: 0 auto;
+.suggestedArticle > a > img {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 20px;
 }
 
-.information>h3{
-    color: #228B22;
-    font-size: 20pt;
-}
-
-.information>img{
-    width: 80%;
-    height: 50vh;
-}
-
-.information>p{
-    text-align: left;
-}
 
 @media only screen and (max-width: 600px) {
     
@@ -199,20 +120,4 @@
     }
 
     .subteams>div>div {justify-content: center;}
-    
-    .projectCard {
-        width: 30%;
-    }
-
-    .infoWindow {
-        left: 5vw;
-        top: 5vh;
-        width: 90vw;
-        height: 90;
-    }
-
-    .information>img{
-        width: 90%;
-        height: 40vh;
-    }
 }
