@@ -106,8 +106,13 @@
 
 /* FOR SMALL SCREEN */
 @media only screen and (max-width: 800px)  {  
+    .active {
+        position: fixed;
+    }
     .nav, .active {
         width: 100vw;
+        height: 10vh; 
+        padding: 0;
     }
 
     .navIcon {

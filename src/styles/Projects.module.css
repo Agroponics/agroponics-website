@@ -120,4 +120,39 @@
     }
 
     .subteams>div>div {justify-content: center;}
+
+
+    /* SUBTEAM CARDS */
+    .subteamArticles {
+        display: flex;
+        flex-direction: row;
+        gap: 15vw;
+        height: 20vh;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .suggestedArticle {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        transition: 0.2s ease-in;
+        width: 15vh;
+        height: 15vh;
+        text-align: center;
+    }
+
+    .suggestedArticle :hover {
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+
+    .suggestedArticle > a > img {
+        width: 15vh;
+        height: 15vh;
+        border-radius: 20px;
+    }
+
 }
