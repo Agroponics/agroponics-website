@@ -10,7 +10,7 @@ export default function Join() {
     
     return(
         <>
-            <Navbar />
+            <Navbar setActive={true}/>
             <main className={styles.joinMain}>
                 <div className={styles.joinLanding}>
                     <div>
