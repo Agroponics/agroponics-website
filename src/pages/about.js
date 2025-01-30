@@ -17,9 +17,6 @@ import structureIMG from "../images/projectIMGs/structure.png";
 
 export default function About() {
     const router = useRouter();
-    const [moreAuto,toggleAutoContainer] = useState(false);
-    const [morePlants,togglePlantsContainer] = useState(false);
-    const [moreStruct,toggleStructContainer] = useState(false);
 
     return(
         <>

@@ -1,61 +1,29 @@
-.form {
+.heading {
+    width: 100%;
+    height: 50vh;
     display: flex;
-    flex-direction: column;
-    background: linear-gradient(
-      rgba(0,0,0,0.5),
-      rgba(0,0,0,0.5)
-    ), url('../images/forest.jpg');
-    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../images/team/1.PNG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    font-family: Comfortaa;
+    color: white;
+}
+
+.heading > div {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.7);
+    display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
-    color: white;
 }
 
-.form>h3{
-    font-size: 36px;
-    margin: 0;
-    text-align: center;
-}
-
-.form>form {
-    margin-top: 5vh;
-    width: 40vw;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.form>form>input {
-    font-size: 18px;
-    border: 2px solid #228B22;
-    color: gray;
-    border-radius: 4px;
-    padding: 5px;
-}
-
-.form>form>button {
-    text-align: right;
-    width: fit-content;
-    background-color: #228B22;
-    color: white;
-    border: 2px solid #228B22;
-    font-size: 16px;
-    padding: 6px 12px;
-    border-radius: 4px;
-    transition: ease-in 0.2s;
-    margin-left: auto;
-}
-
-.form>form>button:hover {
-    background-color: white;
-    color: #228B22;
-    transform: scale(1.05);
-}
-
-.text {
-    width: 80%;
-    margin: 10vh auto;
+.heading > div > span {
+    font-size: 50pt;
 }
 
 /* CURRENTLY DISABLED AS WE HAVE NO SPONSORS*/
@@ -87,4 +55,17 @@
     width: 100%;
     height: 100%;
 
+}
+
+.text {
+    width: 100vw;
+    justify-content: center;
+    text-align: center;
+    padding: 10vh 0;
+}
+
+.text > p {
+    width: 80%;
+    white-space: initial;
+    margin: 0 5vw;
 }

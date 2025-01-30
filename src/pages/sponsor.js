@@ -16,14 +16,21 @@ export default function Sponsor() {
             </Head>
             <Navbar/>
             <main>
-                <div className={styles.form}>
-                    <h3>Sponsor Our Team</h3>
-                    <p>Send us an email if you are interested in supporting our team.</p>
-                    <form  action="/api/form" method="post">
-                        <input type="text" minLength={6}  required id="email" name="email" placeholder="Email"/>
-                        <button type="submit" id="submit" onClick={() => router.push('/error')}>Submit</button>
-                    </form>
-                </div>
+               <section className={styles.heading}>
+                    <div>
+                        <span>Sponsor Us</span>
+                    </div>
+                </section>
+                <section className={styles.sponsor}>
+                    
+                    
+
+                </section>
+                <section className={styles.currentSponsors}>
+                    
+                </section>
+
+
                 <div className={styles.text}>
                     <p>
                         The Agroponics project aims to address critical issues in modern agriculture, including water scarcity, soil depletion, and the need for sustainable farming practices. By developing an autonomous hydroponic system, the project seeks to optimize resource use, reduce environmental impact, and enhance crop yields. The project's objectives include the integration of IoT technologies for real-time monitoring and control, structural renovations to create a controlled growth environment, and experimental research to refine plant growth conditions.
