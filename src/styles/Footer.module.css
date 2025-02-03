@@ -1,43 +1,50 @@
 .footer {
     width: 100vw;
-    height: 50vh;
+    height: fit-content;
     background-color: rgb(233, 233, 233);
     display: flex;
-    justify-content: left;
-    text-align: left;
-    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
     align-items: center;
-    gap: 10%;
-    padding: 0px 0px 40px 40px;
+    padding: 40px 0px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     font-size: medium;
 }
 
-.footer > div {
-    width: 20vw;
-    height: 25vh;
+.footerCols {
     display: flex;
-    flex-direction: column;
-    align-items: left;
+    gap: 5vw;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2vh;
 }
 
-.footer > div > span {
+.footerCols > div {
+    width: 20vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerCols > div > span {
     cursor: pointer;
     padding-bottom: 10px;
     display: flex;
     flex-direction: row;
 }
 
-.footer>div>span>a:hover {
+.footerCols>div>span>a:hover {
     opacity: .6;
 }
 
-.footer>div>span>svg {
+.footerCols>div>span>svg {
     height: 30px;
     width: 30px;
 }
 
-.footer > div > h4 {
+.footerCols > div > h4 {
     color: #228B22;
 }
 
@@ -51,7 +58,7 @@
 
 .copyright {
     background-color: #E9E9E9;
-    width: 100vw;
+    width: 100cw;
     height: auto;
     text-align: center;
     padding-bottom: 5px;
@@ -64,9 +71,13 @@
         width: 100vw;
     }
     .footer {
+        gap: 10vh;
+    }
+    .footerCols {
         flex-direction: column;
         height: auto;
-        padding: 20px 0;
+        align-items: center;
+        gap: 5vh;
     }
     .footer>div {
         width: 80%;
