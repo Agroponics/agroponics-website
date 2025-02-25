@@ -16,7 +16,7 @@ export default function Dog() {
             <main>
                 <div className={styles.dog}>
                     <h1>Dog has found you</h1>
-                    <Image src={`/dog.jpg`} width={800} height={600}></Image>
+                    <img src={`/dog.jpg`}></img>
                     <button className={styles.goHome}>
                         <a onClick={() => router.push('/')}>Click to return home</a>
                     </button>
