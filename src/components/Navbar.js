@@ -75,7 +75,7 @@ function Navbar(props) {
             <span onClick={flashTitle}>
               Contact
             </span>
-            <span onClick={() => router.push('/error')}>
+            <span onClick={() => router.push('/sponsor')}>
               Sponsor
             </span>
             <button className={styles.volunteerButton}>
