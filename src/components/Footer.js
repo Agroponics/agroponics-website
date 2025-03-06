@@ -12,7 +12,7 @@ function Footer() {
           <div className={styles.contact}>
                 <h4 id='contactTitle'>Contact Us</h4> 
                 <span>
-                  <a href='https://maps.app.goo.gl/6H68TqspcrcNMRzp7' target='_blank'>2613 West Mall,<br/>Vancouver, BC, V6T 1Z2</a>
+                  <a href='https://maps.app.goo.gl/kUk9z4Coq3y4jNap7' target='_blank'>2613 West Mall,<br/>Vancouver, BC, V6T 1Z2</a>
                 </span>
                 <span>
                   <a href="mailto:agroponicsubc@gmail.com" rel="noreferrer">agroponicsubc@gmail.com </a>
