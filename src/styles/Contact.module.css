@@ -1,0 +1,53 @@
+.heading {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../images/team/1.PNG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    font-family: Comfortaa;
+    color: white;
+}
+
+.heading > div {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading > div > span {
+    font-size: 50pt;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    margin: 5vh auto;
+    width: 100%;
+    align-items: center;
+    
+}
+
+.contact > div {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.map {
+    border: 0;
+    width: 40vw;
+    height: 70vh;
+}
+
+.form {
+
+} 
