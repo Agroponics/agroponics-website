@@ -46,7 +46,7 @@ function Footer() {
                 </span>
           </div>
         </div>
-        <span className={styles.copyright}>©2025 Agroponics UBC</span>
+        <span onClick={() => router.push('/dog')} className={styles.copyright}>©2025 Agroponics UBC</span>
       </footer>
       
     </>

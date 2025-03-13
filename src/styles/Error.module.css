@@ -38,11 +38,43 @@
 
 /* DOG PAGE STYLING!!! */
 .dog {
-  
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.dog > h1 {
+    
 }
 
+.dog > img {
+    height: 80vh;
+    width: fit-content;
+}
+
+.dog > button {
+    margin: 10px auto;
+    width: 20vw;
+    height: 10vh;
+}
+
+.dog > button:hover {
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 600px) {
+    .dog {
+        height: fit-content;
+    }
+    
+    .dog > button {
+        width: 60%;
+        height: 10vh;
+        margin: 5vh auto;
+    }
+
     .blockmobile {
       display: flex;
     }

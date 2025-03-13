@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import styles from "../styles/Sponsor.module.css";
 import { useRouter } from 'next/router';
 
+
 /* IMAGE IMPORTS */
 import ece from "@/images/sponsorIMGs/ece_logo.jpg"
 import chbe from "@/images/sponsorIMGs/chbe_logo.png"

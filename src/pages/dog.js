@@ -1,8 +1,8 @@
 import React from "react";
 import Head from "next/head";
 import styles from "../styles/Error.module.css";
-import Image from "next/image";
 import { useRouter } from 'next/router';
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export default function Dog() {
