@@ -68,6 +68,10 @@
     .dog {
         height: fit-content;
     }
+    .dog > img {
+        width: 100vw;
+        height: fit-content;
+    }
     
     .dog > button {
         width: 60%;
