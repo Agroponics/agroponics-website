@@ -31,16 +31,56 @@
     flex-direction: row;
     margin: 5vh auto;
     width: 100%;
-    align-items: center;
-    
+    align-items: center;   
+    justify-content: center;
+    gap: 5vw;
 }
+
+.contact h1 {
+    color: #228B22;;
+}
+
 
 .contact > div {
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: 45%;
 }
 
+.contact > div > a {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.contact > div > p {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact > div > ul {
+  text-align: left;
+  list-style-type: none;
+  width: 80%;
+  margin: 5vh auto;
+}
+
+.contact > div > ul > a {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+}
+
+.contact > div > ul > a :hover {
+  text-decoration: underline;
+}
+
+.followIcon {
+  width: 24px;
+  height: 24px;
+}
 
 .map {
     border: 0;
@@ -48,6 +88,18 @@
     height: 70vh;
 }
 
-.form {
+@media only screen and (max-width: 600px) {
+    .contact {
+        flex-direction: column;
+    }
 
-} 
+    .contact > div {
+        width: 80%;
+        margin: 10vh 0;
+    }
+
+    .map {
+        width: 80%;
+        height: 50vh;
+    }
+}
