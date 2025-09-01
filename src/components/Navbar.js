@@ -79,7 +79,7 @@ function Navbar(props) {
               Sponsor
             </span>
             <button className={styles.volunteerButton}>
-              <a onClick={() => router.push('/join')}>Join The Team</a>
+              <a href='https://docs.google.com/forms/d/e/1FAIpQLSfTsSp2DBLQ9jJ0jRU6AFzYBqIYsVRzayUlXa3zDIgrEtlQJQ/viewform' target='_blank'>Join The Team</a>
             </button>
         </div>
         <div className={styles.navButton} onClick={menuActive ? (closeLinks) : openLinks}>

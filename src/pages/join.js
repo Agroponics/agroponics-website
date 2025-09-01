@@ -21,7 +21,7 @@ export default function Join() {
                     <Image alt="Timeline of recruitment process. Applications close Sept 21."/>  
                     <div>
                         <p>Applications close on September 21st!</p>
-                        <a>Link to application form</a>
+                        <a href='https://docs.google.com/forms/d/e/1FAIpQLSfTsSp2DBLQ9jJ0jRU6AFzYBqIYsVRzayUlXa3zDIgrEtlQJQ/formResponse' target='_blank'>Link to application form</a>
                     </div>
                 </div>
             </main>

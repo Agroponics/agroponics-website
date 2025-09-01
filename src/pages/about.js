@@ -104,7 +104,7 @@ export default function About() {
                         text="Interested?"
                     />
                     <p>We would love to hear about your interest in Agroponics. Come join our team!</p>
-                    <a onClick={() => router.push('/join')}>
+                    <a href='https://docs.google.com/forms/d/e/1FAIpQLSfTsSp2DBLQ9jJ0jRU6AFzYBqIYsVRzayUlXa3zDIgrEtlQJQ/viewform' target='_blank'>
                         <button className={ButtonStyles.sectionButton}>Apply here!</button>
                     </a>
                 </div>
