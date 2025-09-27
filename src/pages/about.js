@@ -98,7 +98,7 @@ export default function About() {
                         </div>
                     </div>
                 </section>
-
+            
                 <div className={styles.interested}>
                     <TitleCard 
                         text="Interested?"

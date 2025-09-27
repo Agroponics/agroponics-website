@@ -70,7 +70,7 @@
 .contact > div > ul > a {
   display: flex;
   flex-direction: row;
-  gap: 5%;
+  margin: 2vh 0;
 }
 
 .contact > div > ul > a :hover {
@@ -101,5 +101,9 @@
     .map {
         width: 80%;
         height: 50vh;
+    }
+
+    .contact > div > ul > a {
+      margin: 5vh;
     }
 }

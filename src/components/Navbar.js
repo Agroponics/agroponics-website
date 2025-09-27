@@ -23,18 +23,6 @@ function Navbar(props) {
   const openLinks = () => toggleNavMenu(true);
   const closeLinks = () => toggleNavMenu(false);
 
-  const flashTitle = () => {   
-    router.push('#contact');
-    setTimeout(() => {
-      let x = document.getElementById("contact");
-      let ogColor = x.style.backgroundColor;
-      x.style.backgroundColor = "#FDFD96";
-      setTimeout(() => {
-        x.style.backgroundColor = ogColor;
-      }, 1500);
-    }, 1  );  
-  }     
-
     /*
     * This is used to trigger the add a shadow under the navbar after it scrolls down a certain distance
     */
@@ -72,7 +60,7 @@ function Navbar(props) {
             <span onClick={() => router.push('/projects')}>
               Projects
             </span>
-            <span onClick={flashTitle}>
+            <span onClick={() => router.push('/contact')}>
               Contact
             </span>
             <span onClick={() => router.push('/sponsor')}>
