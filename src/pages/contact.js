@@ -56,7 +56,7 @@ export default function Contact() {
                     </div>
         
                     <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.7431062718956!2d-123.24823739999998!3d49.2623149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548672c98486aabb%3A0xdb34b1b740a5c5c2!2sWayne%20and%20William%20White%20Engineering%20Design%20Centre!5e0!3m2!1sen!2sca!4v1760811996701!5m2!1sen!2sca" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1157.8998822100107!2d-123.24923302704174!3d49.259236386376045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548672cc2fd41e03%3A0xc79dd4e7732aa2f3!2sThe%20University%20of%20British%20Columbia!5e0!3m2!1sen!2sca!4v1760812358729!5m2!1sen!2sca" 
                         className={styles.map} 
                         allowfullscreen="" 
                         loading="lazy" 
