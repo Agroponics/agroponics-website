@@ -1,22 +1,19 @@
 import React from "react";
 import Head from "next/head";
-import Link from "next/link";
 import SponsorCard from "@/components/SponsorCard";
 import Navbar from "../components/Navbar";
 import Footer from "@/components/Footer";
 import styles from "../styles/Sponsor.module.css";
 import { useRouter } from 'next/router';
 
-
 /* IMAGE IMPORTS */
-import ece from "@/images/sponsorIMGs/ece_logo.jpg"
-import chbe from "@/images/sponsorIMGs/chbe_logo.png"
-import fcc from "@/images/sponsorIMGs/fcc_logo.jpg"
-import ieeecu from "@/images/sponsorIMGs/ieeecu_logo.png"
-import lfs from "@/images/sponsorIMGs/lfs_logo.jpg"
-import whgm from "@/images/sponsorIMGs/whgm_logo.png"
-
-
+import ece from "@/images/sponsorIMGs/ece_logo.jpg";
+import chbe from "@/images/sponsorIMGs/chbe_logo.png";
+import fcc from "@/images/sponsorIMGs/fcc_logo.jpg";
+import ieeecu from "@/images/sponsorIMGs/ieeecu_logo.png";
+import lfs from "@/images/sponsorIMGs/lfs_logo.jpg";
+import whgm from "@/images/sponsorIMGs/whgm_logo.png";
+import ams from "@/images/sponsorIMGs/ams.png";
 
 
 export default function Sponsor() {
@@ -51,6 +48,7 @@ export default function Sponsor() {
                         <SponsorCard name="IEEE Carleton University" img={ieeecu} link={"https://www.ieeecarleton.ca/"}/>
                         <SponsorCard name="Farm Credit Canada" img={fcc} link={"https://www.fcc-fac.ca/"}/>
                         <SponsorCard name="Walter H. Gage Memorial Fund" img={whgm} link={"https://vpstudents.ubc.ca/walter-gage/"}/>
+                        <SponsorCard name="UBC Alma Mater Society (AMS)" img={ams} link={"https://www.ams.ubc.ca/"} /> 
                     </div>
                 </section>
             </main>
