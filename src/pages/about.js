@@ -2,7 +2,6 @@ import Head from "next/head";
 import styles from "../styles/About.module.css";
 import ButtonStyles from "../styles/Buttons.module.css";
 import { useRouter} from 'next/router';
-import { useState } from "react";
 import Image from "next/image";
 
 //Components
@@ -67,7 +66,7 @@ export default function About() {
                         <div>
                             <h1>AUTOMATION</h1>
                             <p>
-                                The automation subteam is an Internet of Things (IoT) project that focuses on designing and implementing autonomous farming, real time monitoring, an auto-regulated environment, and remote updates for hydroponic systems. Our goal is to more efficiently use resources in agriculture (land, water, fertilizers, manpower) to help better improve our environment. Currently modern irrigation is exacerbating water scarcity and has dried up entire water systems. Land is also being cleared massively for agriculture. We use a large variety of technologies to collect and communicate data from hydroponic systems to better learn how to simulate different preferred growing environments.
+                                The automation subteam is an Internet of Things (IoT) project that focuses on designing and implementing autonomous farming, real time monitoring, an auto-regulated environment, and remote updates for hydroponic systems. Our goal is to more efficiently use resources in agriculture (land, water, fertilizers, manpower) to help better improve our environment. Currently modern irrigation is exacerbating water scarcity and has dried up entire water systems. Land is also being cleared massively for agriculture. We use a large variety of technologies to collect and communi<span onClick={() => router.push("/cat")} className={styles.cat}>cat</span>e data from hydroponic systems to better learn how to simulate different preferred growing environments.
                             </p>
                         </div>
                     </div>

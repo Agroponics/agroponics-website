@@ -180,6 +180,11 @@
     margin: 40px 0;
 }
 
+.cat:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 600px) {
 
     .info{
