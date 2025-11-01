@@ -1,3 +1,14 @@
+/*
+    The website's Join Page
+
+    Featured on https://ubcagroponics.com/join
+
+    Currently not featured on the website
+
+    Created by Edan Steen
+    Last Modified November 1st 2025
+*/
+
 import { useRouter} from 'next/router';
 import Image from "next/image";
 import Navbar from "@/components/Navbar";

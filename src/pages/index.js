@@ -1,3 +1,12 @@
+/*
+    The website's Landing Page
+
+    Featured on https://ubcagroponics.com/
+
+    Created by Edan Steen
+    Last Modified November 1st 2025
+*/
+
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Main.module.css';

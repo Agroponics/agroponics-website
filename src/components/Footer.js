@@ -1,3 +1,10 @@
+/*
+    The website's Footer component, featured at the bottom of each page.
+
+    Created by Edan Steen
+    Last Modified November 1st 2025
+*/
+
 import React from 'react';
 import { useRouter } from 'next/router';
 import styles from '../styles/Footer.module.css';

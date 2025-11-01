@@ -1,3 +1,14 @@
+/*
+    The website's About Page
+
+    Features all the project posts.
+
+    Featured on https://ubcagroponics.com/projects
+
+    Created by Edan Steen
+    Last Modified November 1st 2025
+*/
+
 import Head from 'next/head';
 import Link from 'next/link';
 import styles from '../styles/Projects.module.css';

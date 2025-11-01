@@ -1,3 +1,13 @@
+/*
+    The website's About Page
+
+    Featured on https://ubcagroponics.com/about
+
+    Created by Edan Steen
+    Last Modified November 1st 2025
+*/
+
+
 import Head from "next/head";
 import styles from "../styles/About.module.css";
 import ButtonStyles from "../styles/Buttons.module.css";

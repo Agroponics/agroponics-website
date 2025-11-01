@@ -4,9 +4,8 @@ Navbar
 - Drop down from About Us showing subteams
 
 Homepage
-- Sponsorships
-- - Show our sponsors
-- - Button to sponsor us
+- More animations
+- smoother image loading
 
 About
 - Show what we're doing in the trailer
@@ -14,15 +13,13 @@ About
 - Show arugula growth
 
 Contacts
-- Create a dedicated contacts page
+- good for now
 
 Sponsor Us
-- Sponsor section
-- Show list of sponsors
-
+- Better sponsor button
+- - Turn into a form?
 
 ### Ideas for other Features to include in the website:
 
-- Blog
 - What hydroponics setup are you? Buzzfeed-style quiz
 - LOOK INTO GSAP !!!

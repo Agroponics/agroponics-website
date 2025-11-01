@@ -1,3 +1,15 @@
+/*
+    The website's Error Page
+
+    To be used as a placeholder whenever a page is being updated
+
+    Featured on https://ubcagroponics.com/error
+
+
+    Created by Edan Steen
+    Last Modified November 1st 2025
+*/
+
 import React from "react";
 import Head from "next/head";
 import Navbar from "../components/Navbar";

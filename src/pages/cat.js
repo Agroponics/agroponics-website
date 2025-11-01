@@ -1,3 +1,12 @@
+/*
+    The website's secret Cat Page
+
+    Featured on https://ubcagroponics.com/cat
+
+    Created by Edan Steen
+    Last Modified November 1st 2025
+*/
+
 import React from "react";
 import Head from "next/head";
 import styles from "../styles/Error.module.css";

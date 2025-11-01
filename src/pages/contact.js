@@ -1,3 +1,12 @@
+/*
+    The website's Contact Page
+
+    Featured on https://ubcagroponics.com/contact
+
+    Created by Edan Steen
+    Last Modified November 1st 2025
+*/
+
 import Head from 'next/head';
 import styles from '../styles/Contact.module.css';
 

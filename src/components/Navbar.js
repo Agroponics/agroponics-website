@@ -1,3 +1,10 @@
+/*
+    The website's Navbar component, featured at the top of each page.
+
+    Created by Edan Steen
+    Last Modified November 1st 2025
+*/
+
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import styles from '../styles/Navbar.module.css';

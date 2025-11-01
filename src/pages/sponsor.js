@@ -1,3 +1,12 @@
+/*
+    The website's Sponsor Page
+
+    Featured on https://ubcagroponics.com/sponsor
+
+    Created by Edan Steen
+    Last Modified November 1st 2025
+*/
+
 import React from "react";
 import Head from "next/head";
 import SponsorCard from "@/components/SponsorCard";
