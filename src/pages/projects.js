@@ -12,6 +12,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import styles from '../styles/Projects.module.css';
+import Image from 'next/image';
 
 //Components
 import Navbar from '../components/Navbar.js';
@@ -52,7 +53,7 @@ export default function Projects({allPostsData}) {
                             (subteam === "automation") ?
                             <li className={styles.suggestedArticle} key={id}>
                                 <Link href={`/projects/${id}`}>
-                                    <img src={`/projectIMGs/${cover_image}`}/>
+                                    <Image height={256} width={256} src={`/projectIMGs/${cover_image}`}/>
                                     <br/>
                                     {title}
                                 </Link>
@@ -68,7 +69,7 @@ export default function Projects({allPostsData}) {
                             (subteam === "plants") ?
                             <li className={styles.suggestedArticle} key={id}>
                                 <Link href={`/projects/${id}`}>
-                                    <img src={`/projectIMGs/${cover_image}`}/>
+                                    <Image height={256} width={256} src={`/projectIMGs/${cover_image}`}/>
                                     <br/>
                                     {title}
                                 </Link>
@@ -84,7 +85,7 @@ export default function Projects({allPostsData}) {
                             (subteam === "structure") ?
                             <li className={styles.suggestedArticle} key={id}>
                                 <Link href={`/projects/${id}`}>
-                                    <img src={`/projectIMGs/${cover_image}`}/>
+                                    <Image height={256} width={256} src={`/projectIMGs/${cover_image}`}/>
                                     <br/>
                                     {title}
                                 </Link>
