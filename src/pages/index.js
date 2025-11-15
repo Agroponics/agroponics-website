@@ -43,9 +43,14 @@ export default function Home() {
             <span className={styles.landingTitle}>Hi, Welcome to UBC Agroponics</span>
             <div>
               <h1>Sustainable Innovation for a Hungry World</h1>
+              {/*   !!!change when recruiting!!!
               <a href='https://docs.google.com/forms/d/e/1FAIpQLSfTsSp2DBLQ9jJ0jRU6AFzYBqIYsVRzayUlXa3zDIgrEtlQJQ/viewform' target='_blank'>
                 <button className={styles.sectionButton}>Apply Today!</button>
-              </a>
+              </a> 
+              */}
+              <a onClick={() => router.push("/about")}>
+                <button className={styles.sectionButton}>About Us</button>
+              </a> 
             </div>
           </div>
         </section>
@@ -59,14 +64,14 @@ export default function Home() {
             </button>
           </div>
           <div className={styles.infoIMG}>
-            <Image src={OurTeam} alt='Some of our teammates'/>
+            <Image loading='lazy' src={OurTeam} alt='Some of our teammates'/>
             <span>Some of our teammates</span>
           </div>
         </section>
 
         <section className={[styles.info, styles.currentProjects].join(" ")}>
           <div className={styles.infoIMG}>
-            <Image src={trailerBack} alt='Back of trailer'/>
+            <Image loading='lazy' src={trailerBack} alt='Back of trailer'/>
             <span>The back of our trailer under construction</span>
           </div>
           <div className={styles.infoText}>

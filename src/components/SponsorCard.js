@@ -18,6 +18,7 @@ function SponsorCard(props) {
                     <Image
                         src={props.img}
                         alt={props.name}
+                        loading='lazy'
                     />
                     <span>{props.name}</span> 
                 </div>

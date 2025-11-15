@@ -53,7 +53,7 @@ export default function Projects({allPostsData}) {
                             (subteam === "automation") ?
                             <li className={styles.suggestedArticle} key={id}>
                                 <Link href={`/projects/${id}`}>
-                                    <Image height={256} width={256} src={`/projectIMGs/${cover_image}`}/>
+                                    <Image loading='lazy' height={256} width={256} src={`/projectIMGs/${cover_image}`}/>
                                     <br/>
                                     {title}
                                 </Link>
@@ -69,7 +69,7 @@ export default function Projects({allPostsData}) {
                             (subteam === "plants") ?
                             <li className={styles.suggestedArticle} key={id}>
                                 <Link href={`/projects/${id}`}>
-                                    <Image height={256} width={256} src={`/projectIMGs/${cover_image}`}/>
+                                    <Image loading='lazy' height={256} width={256} src={`/projectIMGs/${cover_image}`}/>
                                     <br/>
                                     {title}
                                 </Link>
@@ -85,7 +85,7 @@ export default function Projects({allPostsData}) {
                             (subteam === "structure") ?
                             <li className={styles.suggestedArticle} key={id}>
                                 <Link href={`/projects/${id}`}>
-                                    <Image height={256} width={256} src={`/projectIMGs/${cover_image}`}/>
+                                    <Image loading='lazy' height={256} width={256} src={`/projectIMGs/${cover_image}`}/>
                                     <br/>
                                     {title}
                                 </Link>

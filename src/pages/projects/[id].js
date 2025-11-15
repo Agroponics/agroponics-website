@@ -41,7 +41,7 @@ export default function Project({ postData, postContent, allPostsData }) {
               (id != postData.id) ?
               <li className={styles.suggestedArticle} key={id}>
                 <Link href={`/projects/${id}`}>
-                  <Image height={256} width={256} src={`/projectIMGs/${cover_image}`}/>
+                  <Image loading='lazy' height={256} width={256} src={`/projectIMGs/${cover_image}`}/>
                   <br/>
                   {title}
                 </Link>

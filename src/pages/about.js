@@ -72,6 +72,7 @@ export default function About() {
                         <Image 
                             src={automationIMG}
                             alt='Automation team'
+                            loading='lazy'
                         />
                         <div>
                             <h1>AUTOMATION</h1>
@@ -91,6 +92,7 @@ export default function About() {
                         <Image 
                             src={plantsIMG}
                             alt='Plants Team'
+                            loading='lazy'
                         />
                     </div>
 
@@ -98,6 +100,7 @@ export default function About() {
                         <Image 
                             src={structureIMG}
                             alt='Structure Team'
+                            loading='lazy'
                         />
                         <div>
                             <h1>STRUCTURE</h1>
