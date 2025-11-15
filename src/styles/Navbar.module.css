@@ -1,3 +1,12 @@
+/*
+    Styles for the Navbar, featured at the top of nearly every page
+
+    Used in @/components/Navbar.js
+
+    Created by Edan Steen
+    Last Modified November 15th 2025
+*/
+
 .nav, .active {
     width: 100vw;
     padding: 40px 0;

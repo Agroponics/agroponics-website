@@ -1,3 +1,12 @@
+/*
+    Styles for the footer of each page.
+
+    Used in @/components/Footer.js
+
+    Created by Edan Steen
+    Last Modified November 15th 2025
+*/
+
 .footer {
     width: 100vw;
     height: fit-content;
