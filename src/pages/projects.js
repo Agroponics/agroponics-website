@@ -99,7 +99,7 @@ export default function Projects({allPostsData}) {
         </>
     );
 };
-  
+
 export async function getStaticProps() {
     const allPostsData = getSortedPostsData();
     return {
