@@ -72,6 +72,7 @@
   height: fit-content;
   justify-content: center;
   color: white;
+  text-align: center;
 }
 
 .landing>div>div>a {
