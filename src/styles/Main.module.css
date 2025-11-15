@@ -204,11 +204,6 @@
   margin: 40px auto;
 }
 
-.joinMain {
-  display: none;
-  visibility: hidden;
-}
-
 /* MOBILE */
 @media only screen and (max-width: 600px) {
 

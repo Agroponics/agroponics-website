@@ -22,24 +22,11 @@ export default function Join() {
     return(
         <>
             <Navbar setActive={true}/>
-            <main className={styles.joinMain}>
-                <div className={styles.joinLanding}>
-                    <div>
-                        <h1>Join Our Team</h1>
-                    </div>
-                </div>
-                <div className={styles.joinInfo}>
-                    <Image alt="Timeline of recruitment process. Applications close Sept 21."/>  
-                    <div>
-                        <p>Applications close on September 21st!</p>
-                        <a href='https://docs.google.com/forms/d/e/1FAIpQLSfTsSp2DBLQ9jJ0jRU6AFzYBqIYsVRzayUlXa3zDIgrEtlQJQ/formResponse' target='_blank'>Link to application form</a>
-                    </div>
-                </div>
-            </main>
-            
+
             <div className={closed_styles.closed} id="closed">
                 <div>
-                    <span>Sorry, we are not currently taking applications. Contact us if you have any questions!</span>
+                    <span>Sorry, we are not currently taking applications. <br/>
+                        Contact us at <a href='mailto:agroponicsubc@gmail.com'>agroponicsubc@gmail.com</a> if you have any questions!</span>
                     <button onClick={() => router.push('/')}>&lt; Return to Home</button>
                 </div>
             </div>

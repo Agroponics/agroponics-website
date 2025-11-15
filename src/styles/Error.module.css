@@ -36,6 +36,10 @@
     color: #333333;
 }
 
+.closed>div>span>a:hover {
+    text-decoration: underline;
+}
+
 /* DOG PAGE STYLING!!! */
 .dog {
     width: 100vw;

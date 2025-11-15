@@ -2,7 +2,7 @@
     The website's Navbar component, featured at the top of each page.
 
     Created by Edan Steen
-    Last Modified November 1st 2025
+    Last Modified November 15th 2025
 */
 
 import { useEffect, useState } from 'react';
