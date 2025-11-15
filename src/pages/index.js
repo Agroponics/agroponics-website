@@ -4,7 +4,7 @@
     Featured on https://ubcagroponics.com/
 
     Created by Edan Steen
-    Last Modified November 1st 2025
+    Last Modified November 15th 2025
 */
 
 import Head from 'next/head';
@@ -43,13 +43,9 @@ export default function Home() {
             <span className={styles.landingTitle}>Hi, Welcome to UBC Agroponics</span>
             <div>
               <h1>Sustainable Innovation for a Hungry World</h1>
-              {/*   !!!change when recruiting!!!
-              <a href='https://docs.google.com/forms/d/e/1FAIpQLSfTsSp2DBLQ9jJ0jRU6AFzYBqIYsVRzayUlXa3zDIgrEtlQJQ/viewform' target='_blank'>
+
+              <a onClick={() => router.push("/join")}>
                 <button className={styles.sectionButton}>Apply Today!</button>
-              </a> 
-              */}
-              <a onClick={() => router.push("/about")}>
-                <button className={styles.sectionButton}>About Us</button>
               </a> 
             </div>
           </div>

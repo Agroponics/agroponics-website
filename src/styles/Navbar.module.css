@@ -67,7 +67,7 @@
     opacity: .6;
 }
 
-.volunteerButton {
+.joinButton {
     border: 2px solid #228B22;
     width: max-content;
     border-radius: 5px;
@@ -79,7 +79,7 @@
     font-weight: normal;
 }
 
-.volunteerButton:hover {
+.joinButton:hover {
     color: #228B22;
     background-color: transparent;
     transform: scale(1.05);

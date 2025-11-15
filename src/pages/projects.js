@@ -6,7 +6,7 @@
     Featured on https://ubcagroponics.com/projects
 
     Created by Edan Steen
-    Last Modified November 1st 2025
+    Last Modified November 15th 2025
 */
 
 import Head from 'next/head';
