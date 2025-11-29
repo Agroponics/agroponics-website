@@ -53,11 +53,11 @@ export default function Contact() {
                                 <Image height={24} width={25} src={githubLogo} className={styles.followIcon}/>
                                 <li>GitHub</li>
                             </a>
-                            <a href="https://www.linkedin.com/company/ubcagrobot/posts/?feedView=all">
+                            <a href="https://www.linkedin.com/company/ubcagrobot/posts/?feedView=all" target='_blank'>
                                 <Image height={24} width={24} src={linkedinLogo} className={styles.followIcon}/>
                                 <li>LinkedIn</li>
                             </a>
-                            <a href="https://www.instagram.com/ubcagroponics/">
+                            <a href="https://www.instagram.com/ubcagroponics/" target='_blank'>
                                 <Image height={24} width={24} src={instaLogo} className={styles.followIcon}/>
                                 <li>Instagram</li>
                             </a>
