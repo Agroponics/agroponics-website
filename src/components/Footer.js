@@ -11,6 +11,7 @@ import styles from '../styles/Footer.module.css';
 
 function Footer() {
   const router = useRouter();
+  const currentYear = new Date().getFullYear();
 
   return (
     <>
@@ -22,7 +23,7 @@ function Footer() {
                   <a href='https://maps.app.goo.gl/2oyc3JVw7DnZKstd6' target='_blank'>University of British Columbia<br/>Vancouver, BC</a>
                 </span>
                 <span>
-                  <a href="mailto:agroponicsubc@gmail.com" rel="noreferrer">agroponicsubc@gmail.com </a>
+                  <a href="mailto:ubcagrobot@gmail.com" rel="noreferrer">ubcagrobot@gmail.com </a>
                 </span>
           </div>
           <div>
@@ -53,7 +54,7 @@ function Footer() {
                 </span>
           </div>
         </div>
-        <span onClick={() => router.push('/dog')} className={styles.copyright}>©2025 Agroponics UBC</span>
+        <span onClick={() => router.push('/dog')} className={styles.copyright}>©{currentYear} Agroponics UBC</span>
       </footer>
       
     </>

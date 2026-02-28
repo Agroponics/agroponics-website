@@ -46,7 +46,7 @@ export default function Sponsor() {
                         Funding is critical in advancing these objectives as it enables the team to prototype and implement IoT systems for real-time monitoring and control, renovate the physical space to house the hydroponic systems, and conduct in-depth research on optimizing plant growth conditions. 
                         Your help will ensure the project's success in advancing sustainable agricultural practices. 
                     </p>
-                    <a href="mailto:agroponicsubc@gmail.com"><span>Send us an email</span></a>
+                    <a href="mailto:ubcagrobot@gmail.com"><span>Send us an email</span></a>
                 </section>
                 <section className={styles.currentSponsors}>
                     <h1>See our current sponsors!</h1>

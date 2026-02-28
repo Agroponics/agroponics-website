@@ -45,9 +45,9 @@ export default function Contact() {
                         <p>We'd love to here from you! Send us an email if have any questions or would like to get in touch.</p>
 
                         <ul>
-                            <a href="mailto:agroponicsubc@gmail.com">
+                            <a href="mailto:ubcagrobot@gmail.com">
                                 <Image height={24} width={25} src={emailLogo} className={styles.followIcon}/>
-                                <li>agroponicsubc@gmail.com</li>
+                                <li>ubcagrobot@gmail.com</li>
                             </a>
                             <a href="https://github.com/Agroponics" target='_blank'>
                                 <Image height={24} width={25} src={githubLogo} className={styles.followIcon}/>

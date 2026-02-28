@@ -26,7 +26,7 @@ export default function Join() {
             <div className={closed_styles.closed} id="closed">
                 <div>
                     <span>Sorry, we are not currently taking applications. <br/>
-                        Contact us at <a href='mailto:agroponicsubc@gmail.com'>agroponicsubc@gmail.com</a> if you have any questions!</span>
+                        Contact us at <a href='mailto:ubcagrobot@gmail.com'>ubcagrobot@gmail.com</a> if you have any questions!</span>
                     <button onClick={() => router.push('/')}>&lt; Return to Home</button>
                 </div>
             </div>
