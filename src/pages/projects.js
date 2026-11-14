@@ -24,13 +24,18 @@ import { getSortedPostsData } from '../utils/posts.js';
 export default function Projects({allPostsData}) {
     return(
         <>
+        // Link title
             <Head>
                 <title>Agroponics UBC || Projects</title>
                 <meta charSet='utf-8'/>
                 <meta name='viewport' content='width=device-width, initial-scale=1'/>
                 <link rel="icon" href="https://ubcagroponics.com/favicon.ico"/>
             </Head>
+
+        // Sets link navigation - navigation bar
             <Navbar />
+
+        // Headers/titles
             <main>
                 <div className={styles.projectLanding}>
                     <div>
@@ -38,19 +43,27 @@ export default function Projects({allPostsData}) {
                         <h2>See what each of our subteams are doing</h2>
                     </div>
                 </div>
-                
+
+        // Summary/blurb
                 <div className={styles.blurb}>
                     <p>
                         We’re excited to share a glimpse of the projects we’re currently working on. Our team is always exploring new ideas and developing innovative solutions, be sure to check back often for the latest updates and additions!
                     </p>
                 </div>
 
+        // Subteam-specific links
                 <section className={styles.subteams}>
+
+            // Automation-specific links
                     <div className={styles.automation}>
                         <h2>AUTOMATION</h2>
+
+        
                         <ul className={styles.subteamArticles}>
                             {allPostsData.map(({ id, cover_image, title, subteam }) => (
+                                
                             (subteam === "automation") ?
+                                
                             <li className={styles.suggestedArticle} key={id}>
                                 <Link href={`/projects/${id}`}>
                                     <Image loading='lazy' height={256} width={256} src={`/projectIMGs/${cover_image}`}/>
@@ -62,6 +75,7 @@ export default function Projects({allPostsData}) {
                         </ul>                        
                     </div>
 
+            // Plants subteam
                     <div className={styles.plants}>
                         <h2>PLANTS</h2>
                         <ul className={styles.subteamArticles}>
@@ -77,7 +91,8 @@ export default function Projects({allPostsData}) {
                             ))}
                         </ul>
                     </div>
-                    
+
+            // Structure subteam
                     <div className={styles.structure}>
                         <h2>STRUCTURE</h2>
                         <ul className={styles.subteamArticles}>
