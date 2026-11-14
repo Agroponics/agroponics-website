@@ -46,6 +46,8 @@ export default function Projects({allPostsData}) {
                 </div>
 
                 <section className={styles.subteams}>
+
+                    
                     <div className={styles.automation}>
                         <h2>AUTOMATION</h2>
                         <ul className={styles.subteamArticles}>
