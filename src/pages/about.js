@@ -30,7 +30,7 @@ export default function About() {
     return(
         <>
             <Head>
-                <title>Agroponics UBC || About Us</title>
+                <title>testing!!</title>
             </Head>
             <Navbar />
             <main className={styles.main}>
