@@ -11,11 +11,11 @@
   "dependencies": {
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
-    "next": "^14.2.6",
+    "next": "^16.4.6",
     "parse-md": "^3.0.3",
     "react": "^18",
     "react-dom": "^18",
-    "sharp": "^0.33.5",
+    "sharp": "^0.35.5",
     "to-vfile": "^8.0.0"
   }
 }
